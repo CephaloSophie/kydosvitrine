@@ -1,0 +1,1683 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-19",
+  "defaultLocale": "fr",
+  "locales": ["fr", "en"],
+
+  "site": {
+    "name": "Kýdos Belote",
+    "shortName": "Kýdos",
+    "url": "https://kydosbelote.com",
+    "contactEmail": "contact@cephalosophie.com",
+    "copyrightHolder": "Cephalo Sophie",
+    "copyrightYear": 2026,
+    "links": {
+      "cephalosophie": "https://cephalosophie.com",
+      "kantoaplo": "https://kantoaplo.com"
+    },
+    "stores": [
+      { "id": "google-play", "platform": "android", "url": "" },
+      { "id": "app-store", "platform": "ios", "url": "" }
+    ],
+    "company": {
+      "name": "Cephalo Sophie",
+      "legalForm": "",
+      "shareCapital": "",
+      "registration": "",
+      "vatNumber": "",
+      "address": "",
+      "publicationDirector": "",
+      "email": "contact@cephalosophie.com",
+      "website": "https://cephalosophie.com",
+      "gameServerHost": "",
+      "gameServerHostAddress": "",
+      "consumerMediator": "",
+      "consumerMediatorUrl": ""
+    },
+    "siteHost": {
+      "name": "GitHub, Inc. (GitHub Pages)",
+      "address": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA",
+      "website": "https://pages.github.com"
+    },
+    "brand": {
+      "logo": "assets/brand/logo-512.webp",
+      "logoLarge": "assets/brand/logo-1024.webp",
+      "logoSize": 512
+    },
+    "crew": {
+      "croupier": "robot-blanc-tete",
+      "notFound": "robot-rouge"
+    },
+    "chapters": [
+      { "id": "annonces", "card": { "rank": "9",  "suit": "heart",   "points": 14 } },
+      { "id": "jeu",      "card": { "rank": "A",  "suit": "spade",   "points": 11 } },
+      { "id": "ecurie",   "card": { "rank": "V",  "suit": "heart",   "points": 20 } },
+      { "id": "cerveau",  "card": { "rank": "10", "suit": "diamond", "points": 10 } },
+      { "id": "formats",  "card": { "rank": "A",  "suit": "diamond", "points": 11 } },
+      { "id": "arene",    "card": { "rank": "A",  "suit": "club",    "points": 11 } },
+      { "id": "cagnotte", "card": { "rank": "R",  "suit": "heart",   "points": 4, "bonus": "belote" } },
+      { "id": "vitrine",  "card": { "rank": "D",  "suit": "heart",   "points": 3, "bonus": "rebelote", "lastTrick": 10 } }
+    ],
+    "capotPoints": 250,
+    "lab": {
+      "archetypes": {
+        "champion":  { "mascot": "robot-champion" },
+        "contreur":  { "mascot": "robot-rouge" },
+        "stratege":  { "mascot": "robot-cyan" },
+        "eclair":    { "mascot": "robot-jaune" },
+        "prudent":   { "mascot": "robot-titan" },
+        "equilibre": { "mascot": "robot-menthe" }
+      },
+      "defaults": { "aggression": 62, "focus": 48, "speed": 55 }
+    },
+    "formats": [
+      { "id": "acier",   "color": "#8EA2FF", "suit": "spade",   "seats": ["robot-cyan", "robot-perle", "robot-rouge", "robot-titan"] },
+      { "id": "hybride", "color": "#FF8A3D", "suit": "heart",   "seats": ["joueur-lunettes", "robot-menthe", "joueuse-icone", "robot-magenta"] },
+      { "id": "royal",   "color": "#C77DFF", "suit": "diamond", "seats": ["joueur-archiviste", "joueur-punk", "joueuse-icone", "joueur-lunettes"] }
+    ],
+    "bracket": ["Titan & Givre", "Perle & Bulle", "Atné & mounir", "Magma & Vigie", "Léa & Robo-7", "Sofia & Givre", "Noé & Bulle", "Karim & Magma"],
+    "gallery": [
+      { "id": "accueil",            "group": "jouer",       "src": "assets/screens/accueil.webp",            "thumb": "assets/screens/accueil-sm.webp",            "width": 1688, "height": 782 },
+      { "id": "table-pixi",         "group": "jouer",       "src": "assets/screens/table-pixi.webp",         "thumb": "assets/screens/table-pixi-sm.webp",         "width": 844,  "height": 390 },
+      { "id": "entrainement",       "group": "jouer",       "src": "assets/screens/entrainement.webp",       "thumb": "assets/screens/entrainement-sm.webp",       "width": 1688, "height": 782 },
+      { "id": "victoire",           "group": "jouer",       "src": "assets/screens/victoire.webp",           "thumb": "assets/screens/victoire-sm.webp",           "width": 1688, "height": 782 },
+      { "id": "tables-en-ligne",    "group": "jouer",       "src": "assets/screens/tables-en-ligne.webp",    "thumb": "assets/screens/tables-en-ligne-sm.webp",    "width": 1688, "height": 782 },
+      { "id": "match-rapide",       "group": "competition", "src": "assets/screens/match-rapide.webp",       "thumb": "assets/screens/match-rapide-sm.webp",       "width": 1688, "height": 782 },
+      { "id": "composer-equipe",    "group": "competition", "src": "assets/screens/composer-equipe.webp",    "thumb": "assets/screens/composer-equipe-sm.webp",    "width": 1688, "height": 782 },
+      { "id": "matchmaking",        "group": "competition", "src": "assets/screens/matchmaking.webp",        "thumb": "assets/screens/matchmaking-sm.webp",        "width": 1688, "height": 782 },
+      { "id": "duo-acier-live",     "group": "competition", "src": "assets/screens/duo-acier-live.webp",     "thumb": "assets/screens/duo-acier-live-sm.webp",     "width": 1688, "height": 782 },
+      { "id": "tournois",           "group": "competition", "src": "assets/screens/tournois.webp",           "thumb": "assets/screens/tournois-sm.webp",           "width": 1688, "height": 782 },
+      { "id": "tournoi-inscrit",    "group": "competition", "src": "assets/screens/tournoi-inscrit.webp",    "thumb": "assets/screens/tournoi-inscrit-sm.webp",    "width": 1688, "height": 782 },
+      { "id": "salle-attente",      "group": "competition", "src": "assets/screens/salle-attente.webp",      "thumb": "assets/screens/salle-attente-sm.webp",      "width": 1688, "height": 782 },
+      { "id": "tableau-tournoi",    "group": "competition", "src": "assets/screens/tableau-tournoi.webp",    "thumb": "assets/screens/tableau-tournoi-sm.webp",    "width": 1688, "height": 782 },
+      { "id": "podium",             "group": "competition", "src": "assets/screens/podium.webp",             "thumb": "assets/screens/podium-sm.webp",             "width": 1688, "height": 782 },
+      { "id": "defis",              "group": "competition", "src": "assets/screens/defis.webp",              "thumb": "assets/screens/defis-sm.webp",              "width": 1688, "height": 782 },
+      { "id": "croisade-alliee",    "group": "competition", "src": "assets/screens/croisade-alliee.webp",    "thumb": "assets/screens/croisade-alliee-sm.webp",    "width": 1688, "height": 782 },
+      { "id": "en-direct",          "group": "competition", "src": "assets/screens/en-direct.webp",          "thumb": "assets/screens/en-direct-sm.webp",          "width": 1688, "height": 782 },
+      { "id": "premier-robot",      "group": "ecurie",      "src": "assets/screens/premier-robot.webp",      "thumb": "assets/screens/premier-robot-sm.webp",      "width": 1688, "height": 782 },
+      { "id": "ecurie",             "group": "ecurie",      "src": "assets/screens/ecurie.webp",             "thumb": "assets/screens/ecurie-sm.webp",             "width": 1688, "height": 782 },
+      { "id": "editeur-strategie",  "group": "ecurie",      "src": "assets/screens/editeur-strategie.webp",  "thumb": "assets/screens/editeur-strategie-sm.webp",  "width": 1688, "height": 782 },
+      { "id": "equipe",             "group": "communaute",  "src": "assets/screens/equipe.webp",             "thumb": "assets/screens/equipe-sm.webp",             "width": 1688, "height": 782 },
+      { "id": "classements",        "group": "communaute",  "src": "assets/screens/classements.webp",        "thumb": "assets/screens/classements-sm.webp",        "width": 1688, "height": 782 },
+      { "id": "boutique-vip",       "group": "boutique",    "src": "assets/screens/boutique-vip.webp",       "thumb": "assets/screens/boutique-vip-sm.webp",       "width": 1688, "height": 782 },
+      { "id": "animations",         "group": "boutique",    "src": "assets/screens/animations.webp",         "thumb": "assets/screens/animations-sm.webp",         "width": 1688, "height": 782 },
+      { "id": "porte-monnaie",      "group": "boutique",    "src": "assets/screens/porte-monnaie.webp",      "thumb": "assets/screens/porte-monnaie-sm.webp",      "width": 1688, "height": 782 },
+      { "id": "profil",             "group": "profil",      "src": "assets/screens/profil.webp",             "thumb": "assets/screens/profil-sm.webp",             "width": 1688, "height": 782 },
+      { "id": "statistiques",       "group": "profil",      "src": "assets/screens/statistiques.webp",       "thumb": "assets/screens/statistiques-sm.webp",       "width": 1688, "height": 780 },
+      { "id": "rejeu",              "group": "profil",      "src": "assets/screens/rejeu.webp",              "thumb": "assets/screens/rejeu-sm.webp",              "width": 844,  "height": 390 },
+      { "id": "niveau-recompenses", "group": "profil",      "src": "assets/screens/niveau-recompenses.webp", "thumb": "assets/screens/niveau-recompenses-sm.webp", "width": 1688, "height": 780 },
+      { "id": "jetons-niveau",      "group": "profil",      "src": "assets/screens/jetons-niveau.webp",      "thumb": "assets/screens/jetons-niveau-sm.webp",      "width": 1688, "height": 782 },
+      { "id": "connexion",          "group": "profil",      "src": "assets/screens/connexion.webp",          "thumb": "assets/screens/connexion-sm.webp",          "width": 1688, "height": 782 },
+      { "id": "chargement",         "group": "jouer",       "src": "assets/screens/chargement.webp",         "thumb": "assets/screens/chargement-sm.webp",         "width": 1688, "height": 782 }
+    ],
+    "media": {
+      "jeuDevice":     { "src": "assets/screens/table-pixi.webp",        "width": 844,  "height": 390 },
+      "jeuConsole":    { "src": "assets/screens/console-annonces.webp",  "width": 1400, "height": 936 },
+      "jeuConsole2":   { "src": "assets/screens/console-pli.webp",       "width": 1400, "height": 824 },
+      "ecurieDevice":  { "src": "assets/screens/ecurie.webp",            "width": 1688, "height": 782 },
+      "cerveauDevice": { "src": "assets/screens/editeur-strategie.webp", "width": 1688, "height": 782 },
+      "formatsDevice": { "src": "assets/screens/match-rapide.webp",      "width": 1688, "height": 782 },
+      "areneDevice":   { "src": "assets/screens/tableau-tournoi.webp",   "width": 1688, "height": 782 },
+      "arenePodium":   { "src": "assets/screens/podium.webp",            "width": 1688, "height": 782 },
+      "cagnotteDevice":{ "src": "assets/screens/porte-monnaie.webp",     "width": 1688, "height": 782 }
+    }
+  },
+
+  "i18n": {
+    "fr": {
+      "meta": {
+        "ogLocale": "fr_FR",
+        "home":            { "title": "Kýdos Belote — La belote contrée où vos robots jouent aussi", "description": "Kýdos Belote : belote contrée multijoueur en temps réel, écurie de robots joueurs à entraîner, éditeur de stratégie sans code, tournois jusqu’à 128 joueurs. Bientôt sur Android et iOS." },
+        "cgu":             { "title": "Conditions générales d’utilisation — Kýdos Belote", "description": "Conditions générales d’utilisation du jeu Kýdos Belote : compte, fair-play, robots, jetons virtuels sans valeur monétaire, tournois, VIP et publicité." },
+        "confidentialite": { "title": "Politique de confidentialité — Kýdos Belote", "description": "Comment Kýdos Belote collecte, utilise et protège vos données personnelles, et comment exercer vos droits (RGPD)." },
+        "notfound":        { "title": "Page introuvable — Kýdos Belote", "description": "Cette page n’existe pas. Retournez à la table de Kýdos Belote." }
+      },
+
+      "ui": {
+        "skipLink": "Aller au contenu",
+        "menuOpen": "Ouvrir la main (menu)",
+        "menuClose": "Fermer le menu",
+        "menuTitle": "Ta main",
+        "menuHint": "Joue une carte pour aller au pli.",
+        "langLabel": "Langue",
+        "langSwitchTo": "Switch to English",
+        "langShort": { "fr": "FR", "en": "EN" },
+        "trick": "Pli",
+        "tricks": "Plis",
+        "points": "pts",
+        "us": "NOUS",
+        "them": "EUX",
+        "home": "Accueil",
+        "backToTable": "Retour à la table",
+        "toc": "Sommaire",
+        "lastUpdated": "Dernière mise à jour :",
+        "comingSoon": "Bientôt",
+        "readMore": "Lire la suite",
+        "prev": "Précédent",
+        "next": "Suivant",
+        "close": "Fermer",
+        "zoom": "Agrandir l’écran",
+        "croupierName": "Le croupier",
+        "croupierHide": "Masquer le croupier",
+        "croupierShow": "Afficher le croupier",
+        "bonus": { "belote": "Belote !", "rebelote": "Rebelote !", "lastTrick": "Dix de der" },
+        "capot": "Capot",
+        "ranks": { "A": "A", "R": "R", "D": "D", "V": "V", "10": "10", "9": "9", "8": "8", "7": "7" },
+        "suits": { "heart": "cœur", "spade": "pique", "diamond": "carreau", "club": "trèfle" },
+        "external": "(nouvel onglet)",
+        "legalLinks": { "cgu": "CGU", "confidentialite": "Confidentialité" }
+      },
+
+      "loader": {
+        "brand": "KÝDOS",
+        "tagline": "BELOTE CONTRÉE",
+        "steps": {
+          "content": "Contenu reçu",
+          "fonts": "Réveil des polices…",
+          "images": "Mise en place de la table…",
+          "ready": "Distribution !"
+        },
+        "log": "Chargement du cerveau de {name} · OK",
+        "crewNames": ["Atné", "Perle", "Titan", "Givre"]
+      },
+
+      "nav": {
+        "donne": "La donne",
+        "annonces": "Annonces",
+        "jeu": "La table",
+        "ecurie": "L’écurie",
+        "cerveau": "Le cerveau",
+        "formats": "Formats",
+        "arene": "L’arène",
+        "cagnotte": "Cagnotte",
+        "vitrine": "Vitrine",
+        "maison": "La maison",
+        "capot": "Capot"
+      },
+
+      "croupier": {
+        "donne": "Bienvenue à ma table. Coupe le paquet, je distribue…",
+        "annonces": "À toi d’annoncer. Ici, chaque enchère est une promesse.",
+        "jeu": "La contrée : 90 % de lecture, 10 % de chance.",
+        "ecurie": "Je forme les meilleurs. Certains me battent déjà.",
+        "cerveau": "Ici, tu câbles leur cerveau. Nœud par nœud.",
+        "formats": "Trois tables. Choisis qui s’assoit.",
+        "arene": "Capot, contre, gloire. Dans cet ordre.",
+        "cagnotte": "Belote ! Les jetons, c’est pour la gloire. Pas pour la banque.",
+        "vitrine": "Rebelote ! Et dix de der : regarde un peu ces écrans.",
+        "maison": "La maison ne triche jamais. Elle construit.",
+        "capot": "Capot ! Tu as ramassé tous les plis. Respect.",
+        "legal": "Les règles de la maison. On les lit avant de couper.",
+        "notfound": "Cette carte n’est pas dans le paquet…"
+      },
+
+      "hero": {
+        "kicker": "Belote contrée × IA",
+        "title": "KÝDOS",
+        "subtitle": "BELOTE",
+        "tagline": ["Entraîne des robots.", "Conçois leur stratégie.", "Conquiers la gloire."],
+        "lead": "La belote contrée, en temps réel, avec une idée qu’on ne trouve nulle part ailleurs : tu ne fais pas que jouer. Tu élèves, tu règles et tu fais combattre ta propre écurie de robots.",
+        "ctaPrimary": "Couper le paquet",
+        "ctaSecondary": "Bientôt sur Android & iOS",
+        "handLabel": "Ta main : 8 plis à ramasser",
+        "chips": [
+          { "value": "32", "label": "cartes" },
+          { "value": "4", "label": "sièges" },
+          { "value": "8", "label": "plis" },
+          { "value": "∞", "label": "stratégies" }
+        ],
+        "ticker": [
+          { "tone": "live",   "tag": "LIVE",  "text": "♥ Alliance hybride · NOUS 1 — 0 EUX · manche 2 · ton robot joue pour toi" },
+          { "tone": "acier",  "tag": "DUO",   "text": "♠ Duo d’acier · Titan & Givre remportent la table" },
+          { "tone": "royal",  "tag": "12:04", "text": "♦ Grand Carré Royal Live · 123 / 128 inscrits" },
+          { "tone": "nous",   "tag": "DÉFI",  "text": "★ Croisade alliée · défi relevé par Perle" },
+          { "tone": "coin",   "tag": "◆",     "text": "Récompense du jour · +500 ◆" },
+          { "tone": "xp",     "tag": "⚡",     "text": "Atné passe niveau 3 · nouvel avatar débloqué" }
+        ]
+      },
+
+      "chapters": {
+        "annonces": {
+          "kicker": "Premier pli · les annonces",
+          "title": ["Plus qu’un jeu", "de cartes"],
+          "lead": "Chez Kýdos, chaque enchère monte d’un cran. Suis les annonces : à 160, tu sauras exactement ce qu’on met sur la table.",
+          "bids": [
+            { "value": "80",  "suit": "heart",   "title": "Une vraie belote contrée", "text": "Les règles que tu connais : enchères, atout, belote-rebelote, dix de der, capot. Sans raccourci, avec un moteur de jeu complet." },
+            { "value": "100", "suit": "spade",   "title": "Des robots que tu élèves", "text": "Chaque joueur possède une écurie. Tes robots jouent à tes côtés, à ta place, et progressent comme toi." },
+            { "value": "120", "suit": "diamond", "title": "Un cerveau que tu conçois", "text": "Règle leur personnalité, choisis leur cerveau, câble leur logique de décision. Sans écrire une ligne de code." },
+            { "value": "140", "suit": "club",    "title": "Une arène qui ne dort jamais", "text": "Matchs rapides, défis, tournois à élimination directe jusqu’à 128 joueurs, spectateurs et classements." },
+            { "value": "160", "suit": "heart",   "title": "Tout ça, dans ta poche", "text": "Une application mobile native pour Android et iOS, pensée en paysage, jouable hors ligne pour s’entraîner." }
+          ],
+          "contre": { "label": "CONTRÉE !", "text": "Tu doutes ? Nous aussi, on aime qu’on nous contre." },
+          "surcontre": { "label": "SURCONTRÉE !", "text": "…alors on double la mise : fais défiler, tout est prouvé écran par écran." }
+        },
+
+        "jeu": {
+          "kicker": "Deuxième pli · la table",
+          "title": ["La table,", "en temps réel"],
+          "lead": "Quatre sièges, trente-deux cartes et une synchronisation temps réel entre tous les joueurs. Tu annonces, tu contres, tu surcontres. Chaque pli compte, et chaque partie se rejoue.",
+          "features": [
+            { "icon": "bid",     "title": "Enchères stratégiques", "text": "Annonce, contre, surcontre : chaque décision pèse sur le score." },
+            { "icon": "live",    "title": "Multijoueur temps réel", "text": "Humains et robots à la même table, sans latence perceptible." },
+            { "icon": "replay",  "title": "Rejeu & analyse", "text": "Chaque partie est archivée et se rejoue coup par coup : mains, annonces, timing." },
+            { "icon": "stats",   "title": "Statistiques", "text": "Plis, contrats tenus ou chutés, contres, capots, belotes : tout est compté." },
+            { "icon": "offline", "title": "Entraînement hors ligne", "text": "Gratuit, sans réseau, contre tes robots ou avec eux." },
+            { "icon": "eye",     "title": "Spectateurs", "text": "Jusqu’à 10 spectateurs par match. Ils ne voient jamais les mains." }
+          ],
+          "consoleTitle": "Console moteur",
+          "consoleCaption": "Ce que pense un robot pendant les annonces, en direct.",
+          "console": [
+            { "lvl": "INF", "text": "Analyse d’ouverture : recherche d’une couleur forte (V + 9 + ≥ 4 atouts)." },
+            { "lvl": "INF", "text": "Ouverture FAIBLE 90 ♥ (5 atouts)." },
+            { "lvl": "INF", "text": "Réponse au partenaire (90 ♥) · As = 1 · Valet = non · atouts = 1." },
+            { "lvl": "WRN", "text": "Sans Valet d’atout sur ouverture 90 : je PASSE et je garde 1 As." },
+            { "lvl": "INF", "text": "Réponse : 100 ♥ [Valet + 10]." },
+            { "lvl": "DBG", "text": "Cartes jouables : 8♥ 7♥ 9♠ 8♣ V♦ V♥ 10♥ A♥" },
+            { "lvl": "INF", "text": "Maître possible · p(carte minimale) = 60 % · tirage = 0,18 → 7♥" },
+            { "lvl": "INF", "text": "Pli 3 remporté · NOUS +21" }
+          ],
+          "deviceAlt": "La table de jeu Kýdos rendue en WebGL : quatre sièges, la main du joueur et le pli en cours.",
+          "consoleAlt": "Entraînement local : fenêtre d’annonce et console moteur qui détaille le raisonnement des robots."
+        },
+
+        "ecurie": {
+          "kicker": "Troisième pli · l’écurie",
+          "title": ["Tes robots.", "Ta personnalité."],
+          "lead": "Chaque joueur possède une écurie de robots. Donne-leur un caractère, regarde-les jouer, progresser et gagner des niveaux, exactement comme toi.",
+          "lab": {
+            "title": "Laboratoire",
+            "subtitle": "Règle un robot et regarde sa personnalité changer.",
+            "sliders": {
+              "aggression": { "label": "Agressivité", "hint": "Annonce haut, contre souvent." },
+              "focus":      { "label": "Concentration", "hint": "Retient les cartes tombées." },
+              "speed":      { "label": "Vélocité", "hint": "Décide vite, ne laisse rien respirer." }
+            },
+            "styleLabel": "Style de jeu",
+            "randomize": "Robot au hasard",
+            "archetypes": {
+              "champion":  { "name": "Le Champion", "text": "Tout au maximum. Il gagne, et il le sait." },
+              "contreur":  { "name": "Le Contreur", "text": "Style agressif : il contre souvent. Gardez vos atouts." },
+              "stratege":  { "name": "Le Stratège", "text": "Il compte chaque carte tombée et joue le coup d’après." },
+              "eclair":    { "name": "L’Éclair", "text": "Il joue vite et met la pression à toute la table." },
+              "prudent":   { "name": "Le Prudent", "text": "Il annonce peu et ne chute presque jamais." },
+              "equilibre": { "name": "L’Équilibré", "text": "Solide partout, le partenaire idéal pour débuter." }
+            }
+          },
+          "roles": [
+            { "suit": "heart",   "title": "À tes côtés", "text": "En Alliance hybride, ton robot est ton coéquipier." },
+            { "suit": "spade",   "title": "À ta place", "text": "En Duo d’acier, tes robots jouent seuls, même quand tu dors." },
+            { "suit": "diamond", "title": "En relève", "text": "Déconnecté ? Un robot remplaçant reprend ta main." },
+            { "suit": "club",    "title": "Il progresse", "text": "Score Kýdos, niveaux, avatars : il grandit à chaque partie." }
+          ],
+          "deviceAlt": "L’écran Écurie de l’application : trois robots, leurs niveaux, leur score et leur forme."
+        },
+
+        "cerveau": {
+          "kicker": "Quatrième pli · le cerveau",
+          "title": ["Conçois", "leur intelligence"],
+          "lead": "Pas de code. Tu connectes des nœuds visuels (conditions, calculs, actions) et tu construis la logique de décision de ton robot. Le même moteur pilote tous les robots, avec une stricte égalité de traitement.",
+          "run": "Lancer la décision",
+          "running": "Décision en cours…",
+          "legend": { "trigger": "Déclencheur", "condition": "Condition", "compute": "Calcul", "action": "Action" },
+          "nodes": {
+            "trigger":  { "title": "Mon tour d’annoncer", "detail": "Enchères · tour 1" },
+            "jack":     { "title": "Valet d’atout ?", "detail": "main ∋ V♥" },
+            "trumps":   { "title": "Atouts ≥ 4 ?", "detail": "compte(♥) = 5" },
+            "score":    { "title": "Force de main", "detail": "= 94 points" },
+            "partner":  { "title": "Partenaire a parlé ?", "detail": "90 ♥" },
+            "bid":      { "title": "Annoncer 100 ♥", "detail": "action" }
+          },
+          "output": "Atné annonce 100 ♥",
+          "presets": { "title": "Cerveaux prêts à l’emploi", "items": ["Standard", "Classique", "Agressif", "Prudent"] },
+          "deviceAlt": "L’éditeur de robot : réglages d’agressivité, de prise de risque et de mémoire des cartes, choix du cerveau."
+        },
+
+        "formats": {
+          "kicker": "Cinquième pli · les formats",
+          "title": ["Trois tables,", "trois façons de gagner"],
+          "lead": "Du 100 % robots au 100 % humains, choisis qui s’assoit. Chaque format a sa couleur et son glyphe, partout dans l’application.",
+          "seatLabels": { "robot": "Robot", "human": "Humain" },
+          "items": {
+            "acier":   { "name": "Duo d’Acier", "composition": "2 robots × 2", "tagline": "100 % robots", "text": "Aucun humain à la table : la partie se joue côté serveur, immédiatement. Engage tes robots et récupère le résultat plus tard." },
+            "hybride": { "name": "Alliance Hybride", "composition": "1 humain + 1 robot × 2", "tagline": "Toi et ton robot", "text": "Tu fais équipe avec ton propre robot face à un autre duo humain-robot. La coopération devient une arme." },
+            "royal":   { "name": "Carré Royal", "composition": "4 humains", "tagline": "Belote classique", "text": "Quatre joueurs, deux équipes, la belote contrée dans sa forme la plus pure, avec deux gagnants." }
+          },
+          "deviceAlt": "L’écran Match rapide : les trois formats Duo d’acier, Alliance hybride et Carré royal."
+        },
+
+        "arene": {
+          "kicker": "Sixième pli · l’arène",
+          "title": ["Tournois, défis", "& gloire"],
+          "lead": "Des tournois à élimination directe de 4 à 128 participants, avec un tableau qui se remplit en direct. Des défis contre les champions de la maison. Des classements, des équipes et une communauté.",
+          "bracketTitle": "Coupe du soir · en direct",
+          "bracketRounds": ["Quarts", "Demies", "Finale", "Champion"],
+          "live": "LIVE",
+          "spectators": "spectateurs",
+          "stats": [
+            { "value": "128", "label": "joueurs par tournoi, au maximum" },
+            { "value": "1",   "label": "tournoi par robot et par jour" },
+            { "value": "10",  "label": "spectateurs par match" },
+            { "value": "3",   "label": "marches sur le podium" }
+          ],
+          "community": [
+            { "icon": "trophy", "title": "Défis", "text": "Bats les champions de la maison pour gagner des ◆." },
+            { "icon": "users",  "title": "Équipes", "text": "Crée ton équipe : son score est la somme des points de ses membres." },
+            { "icon": "chart",  "title": "Classements", "text": "Joueurs, robots et équipes, à la semaine ou à la saison." },
+            { "icon": "chat",   "title": "Discussion", "text": "Un canal par équipe pour préparer le prochain tournoi." }
+          ],
+          "deviceAlt": "Le tableau d’un tournoi en direct : huitièmes, quarts, demi-finales et finale.",
+          "podiumAlt": "Le podium de fin de tournoi : première, deuxième et troisième place."
+        },
+
+        "cagnotte": {
+          "kicker": "Septième pli · la cagnotte",
+          "title": ["Jetons, VIP", "& niveaux"],
+          "lead": "Les jetons ◆ servent à entrer dans les matchs et les tournois, à débloquer des animations et à passer VIP. Ils se gagnent en jouant, en relevant des défis et chaque jour.",
+          "daily": {
+            "label": "Récompense du jour",
+            "amount": 500,
+            "streak": "Série",
+            "days": "j",
+            "claim": "Réclamer",
+            "claimed": "Réclamée ! Reviens demain."
+          },
+          "vip": {
+            "label": "VIP",
+            "title": "Passe VIP",
+            "perks": ["Aucune publicité", "Cadre doré et couronne", "+3 % de points Kýdos sur chaque gain"],
+            "note": "Se paie en jetons. Durée cumulable."
+          },
+          "level": {
+            "label": "Niveau",
+            "value": 1,
+            "current": 320,
+            "target": 500,
+            "reward": "Encore 180 pts : avatar « Lunettes dorées »"
+          },
+          "disclaimer": "Les jetons ◆ sont une monnaie de jeu virtuelle : ils n’ont aucune valeur monétaire et ne sont jamais convertibles en argent réel.",
+          "deviceAlt": "Le porte-monnaie : solde de jetons, récompense du jour, vidéo récompensée, code promo et historique."
+        },
+
+        "vitrine": {
+          "kicker": "Huitième pli · la vitrine",
+          "title": ["Chaque écran", "est une carte"],
+          "lead": "Bats le paquet : voici l’application telle qu’elle est, écran par écran. Paysage uniquement, thème Néon Arcade, aucune valeur en dur.",
+          "shuffle": "Battre le paquet",
+          "all": "Tout",
+          "counter": "Écran",
+          "groups": {
+            "jouer": "Jouer",
+            "competition": "Compétition",
+            "ecurie": "Écurie",
+            "communaute": "Communauté",
+            "boutique": "Boutique",
+            "profil": "Profil"
+          },
+          "specs": [
+            { "value": "WebGL", "label": "table PixiJS" },
+            { "value": "6", "label": "thèmes de table" },
+            { "value": "SVG", "label": "mascottes paramétriques" },
+            { "value": "2", "label": "bus audio : mélodie & effets" },
+            { "value": "0", "label": "réseau requis pour s’entraîner" },
+            { "value": "2", "label": "plateformes : Android & iOS" }
+          ],
+          "items": {
+            "accueil":            { "title": "Accueil", "caption": "Le hub : partie rapide, match en direct, récompense du jour, tournoi et défi du moment.", "alt": "Écran d’accueil de Kýdos avec la partie rapide, la récompense du jour et le prochain tournoi." },
+            "table-pixi":         { "title": "La table", "caption": "La table de jeu en WebGL, avec l’habillage et les dos de cartes du thème.", "alt": "Table de belote Kydos avec la main du joueur et les annonces." },
+            "entrainement":       { "title": "Entraînement", "caption": "Configure ta partie : sièges, cartes visibles, nombre de manches.", "alt": "Écran de configuration d’une partie d’entraînement." },
+            "victoire":           { "title": "Fin de partie", "caption": "Victoire, score final et points Kýdos gagnés.", "alt": "Écran de victoire en fin de partie avec le score 1012 à 846." },
+            "tables-en-ligne":    { "title": "Tables en ligne", "caption": "Le lobby : rejoins une table ou crée la tienne.", "alt": "Liste des tables en ligne avec les sièges libres." },
+            "match-rapide":       { "title": "Match rapide", "caption": "Les trois formats, leurs mises et leurs gains.", "alt": "Écran Match rapide avec Duo d’acier, Alliance hybride et Carré royal." },
+            "composer-equipe":    { "title": "Composer son équipe", "caption": "Choisis ton coéquipier et ton remplaçant avant de t’inscrire.", "alt": "Écran de composition d’équipe avec le récapitulatif de mise." },
+            "matchmaking":        { "title": "Matchmaking", "caption": "Recherche d’adversaires, en direct, avec estimation de l’attente.", "alt": "Écran de recherche d’adversaires avec un chronomètre." },
+            "duo-acier-live":     { "title": "Duo d’acier en cours", "caption": "Tes robots jouent seuls : suis la partie comme un spectateur.", "alt": "Match Duo d’acier en cours entre quatre robots." },
+            "tournois":           { "title": "Tournois", "caption": "À venir, en cours, terminés : toute la saison d’un coup d’œil.", "alt": "Liste des tournois à venir, en cours et terminés." },
+            "tournoi-inscrit":    { "title": "Inscription", "caption": "Gains par position, compte à rebours et places restantes.", "alt": "Détail d’un tournoi auquel le joueur est inscrit." },
+            "salle-attente":      { "title": "Salle d’attente", "caption": "Le prochain match démarre dans quelques secondes.", "alt": "Salle d’attente d’un tournoi avec un compte à rebours." },
+            "tableau-tournoi":    { "title": "Tableau du tournoi", "caption": "Le bracket se remplit en direct, match après match.", "alt": "Tableau d’un tournoi à élimination directe." },
+            "podium":             { "title": "Podium", "caption": "La gloire, en trois marches.", "alt": "Podium de fin de tournoi." },
+            "defis":              { "title": "Défis", "caption": "Bats les champions de la maison pour gagner des ◆.", "alt": "Liste des défis Kýdos." },
+            "croisade-alliee":    { "title": "Croisade alliée", "caption": "Un défi en Alliance hybride contre les champions de la maison.", "alt": "Détail du défi Croisade alliée." },
+            "en-direct":          { "title": "En direct", "caption": "Tournois et tables publiques à regarder en spectateur.", "alt": "Liste des parties en direct ouvertes aux spectateurs." },
+            "premier-robot":      { "title": "Premier robot", "caption": "L’onboarding : crée et nomme ton premier robot.", "alt": "Création du premier robot pendant l’onboarding." },
+            "ecurie":             { "title": "Écurie", "caption": "Tes robots, leur niveau, leur score et leur forme.", "alt": "Écran de l’écurie avec plusieurs robots." },
+            "editeur-strategie":  { "title": "Éditeur de stratégie", "caption": "Agressivité, prise de risque, mémoire des cartes, cerveau.", "alt": "Éditeur de stratégie d’un robot avec des curseurs." },
+            "equipe":             { "title": "Mon équipe", "caption": "Membres, rôles, score d’équipe et invitations.", "alt": "Écran de gestion de l’équipe." },
+            "classements":        { "title": "Classements", "caption": "Joueurs, robots et équipes, à la semaine ou à la saison.", "alt": "Classement des joueurs avec le premier mis en avant." },
+            "boutique-vip":       { "title": "Boutique VIP", "caption": "Sans publicité, cadre doré et +3 % de points.", "alt": "Boutique VIP avec les offres 1 jour, 10 jours et 30 jours." },
+            "animations":         { "title": "Animations", "caption": "Salut du champion, danse de victoire, lunettes dorées…", "alt": "Boutique d’animations pour joueurs et robots." },
+            "porte-monnaie":      { "title": "Porte-monnaie", "caption": "Solde, récompense du jour, code promo et historique.", "alt": "Écran du porte-monnaie de jetons." },
+            "profil":             { "title": "Profil", "caption": "Ton style de jeu, tes victoires et tes robots.", "alt": "Écran de profil du joueur." },
+            "statistiques":       { "title": "Statistiques", "caption": "Le détail d’une partie : plis, belotes, capots, manches.", "alt": "Statistiques détaillées d’une partie." },
+            "rejeu":              { "title": "Rejeu", "caption": "Revois chaque donne, à la vitesse que tu veux.", "alt": "Rejeu d’une partie avec les contrôles de lecture." },
+            "niveau-recompenses": { "title": "Niveaux & récompenses", "caption": "Chaque niveau débloque un avatar, un robot ou une animation.", "alt": "Échelle des niveaux et des récompenses." },
+            "jetons-niveau":      { "title": "Jetons & niveau", "caption": "L’onboarding explique les jetons, les niveaux et les premiers objectifs.", "alt": "Étape de l’onboarding sur les jetons et le niveau." },
+            "connexion":          { "title": "Connexion", "caption": "Pseudo et mot de passe, ou connexion avec Google.", "alt": "Écran de connexion." },
+            "chargement":         { "title": "Chargement", "caption": "L’écran de chargement du jeu, qui a inspiré celui de ce site.", "alt": "Écran de chargement avec quatre robots et une grille rétro." }
+          }
+        },
+
+        "maison": {
+          "kicker": "La maison",
+          "title": ["Qui tient", "la table"],
+          "lead": "Kýdos est la démonstration de force de ce que l’écosystème Cephalo Sophie sait construire : un jeu de cartes multijoueur temps réel est l’un des logiciels les plus exigeants qui soient.",
+          "studios": [
+            { "id": "cephalosophie", "name": "Cephalosophie", "url": "https://cephalosophie.com", "domain": "cephalosophie.com", "motto": "« La sagesse de l’esprit »", "text": "Éditeur de logiciels français et studio qui allie intelligence artificielle et jeux de cartes traditionnels. Cephalosophie édite Kýdos Belote." },
+            { "id": "kantoaplo", "name": "KANTO APLO", "url": "https://kantoaplo.com", "domain": "kantoaplo.com", "motto": "« Rends-le simple »", "text": "La plateforme no-code de l’écosystème, et le projet technique derrière Kýdos : infrastructure, moteur de jeu, entraînement de l’IA." }
+          ],
+          "stackTitle": "Ce que Kýdos réunit",
+          "stack": [
+            { "title": "Temps réel", "text": "Synchronisation d’état entre tous les joueurs." },
+            { "title": "IA décisionnelle", "text": "Un moteur de robots piloté par des données." },
+            { "title": "Économie virtuelle", "text": "Transactions tracées, intégrité garantie." },
+            { "title": "Rendu graphique", "text": "Une table en WebGL, des mascottes paramétriques." },
+            { "title": "Mobile natif", "text": "Android et iOS, une seule base de code." },
+            { "title": "Back-office", "text": "Tout se pilote sans redéploiement." }
+          ]
+        },
+
+        "capot": {
+          "kicker": "Dernier pli",
+          "title": "CAPOT !",
+          "lead": "Tu as ramassé les huit plis. Il ne manque plus que toi à la table.",
+          "availability": "Bientôt disponible sur Android & iOS",
+          "stores": {
+            "google-play": { "top": "Bientôt sur", "name": "Google Play" },
+            "app-store": { "top": "Bientôt sur l’", "name": "App Store" }
+          },
+          "contactTitle": "Une question, un partenariat, un tournoi ?",
+          "contactCta": "Écrire à l’équipe",
+          "replay": "Rejouer la donne"
+        }
+      },
+
+      "footer": {
+        "tagline": "La belote contrée où tes robots jouent aussi.",
+        "madeBy": "Un jeu édité par Cephalo Sophie",
+        "rights": "Tous droits réservés.",
+        "contact": "Contact",
+        "legalTitle": "Légal",
+        "exploreTitle": "Explorer",
+        "note": "Les jetons ◆ de Kýdos sont virtuels et sans valeur monétaire."
+      },
+
+      "notfound": {
+        "code": ["4", "4"],
+        "title": "Page introuvable",
+        "text": "Ce lien ne mène nulle part. La partie continue à l’accueil.",
+        "cta": "Retour à l’accueil"
+      },
+
+      "legal": {
+        "fields": {
+          "name": "Raison sociale",
+          "legalForm": "Forme juridique",
+          "shareCapital": "Capital social",
+          "registration": "Immatriculation",
+          "vatNumber": "N° de TVA intracommunautaire",
+          "address": "Siège social",
+          "publicationDirector": "Directeur de la publication",
+          "email": "E-mail",
+          "website": "Site web",
+          "siteHost": "Hébergeur du site vitrine",
+          "gameServerHost": "Hébergeur des serveurs de jeu",
+          "consumerMediator": "Médiateur de la consommation"
+        },
+        "cgu": {
+          "title": "Conditions générales d’utilisation",
+          "kicker": "Règles de la maison",
+          "updated": "19 septembre 2026",
+          "intro": "Bienvenue à la table de Kýdos Belote. Ces conditions encadrent l’utilisation du jeu et de ses services. Elles sont écrites pour être lues : prenez cinq minutes avant de couper.",
+          "sections": [
+            {
+              "id": "objet",
+              "title": "Objet et acceptation",
+              "blocks": [
+                { "type": "p", "text": "Les présentes conditions générales d’utilisation (les **CGU**) régissent l’accès et l’utilisation de l’application mobile **Kýdos Belote** (Android et iOS), de ses services en ligne et du site kydosbelote.com (ensemble, le **Service**)." },
+                { "type": "p", "text": "En créant un compte ou en utilisant le Service, vous acceptez les CGU sans réserve. Si vous ne les acceptez pas, n’utilisez pas le Service." }
+              ]
+            },
+            {
+              "id": "editeur",
+              "title": "Éditeur du Service",
+              "blocks": [
+                { "type": "p", "text": "Le Service est édité par **{company}**, éditeur de logiciels français." },
+                { "type": "identity" },
+                { "type": "host" }
+              ]
+            },
+            {
+              "id": "service",
+              "title": "Description du Service",
+              "blocks": [
+                { "type": "p", "text": "Kýdos Belote est un jeu de **belote contrée** multijoueur en temps réel. Il permet notamment :" },
+                { "type": "list", "items": [
+                  "de jouer contre d’autres joueurs ou contre des robots, en ligne ou en entraînement hors ligne ;",
+                  "de créer, configurer et faire progresser une écurie de robots joueurs ;",
+                  "de participer à des matchs rapides (Duo d’Acier, Alliance Hybride, Carré Royal), à des défis et à des tournois ;",
+                  "de rejoindre une équipe, d’échanger dans le canal de discussion de l’équipe et de figurer dans des classements ;",
+                  "d’utiliser des jetons virtuels (◆) et d’accéder à un statut VIP."
+                ] },
+                { "type": "p", "text": "Le Service est fourni en l’état de son développement. Certaines fonctionnalités peuvent être ajoutées, modifiées ou retirées au fil des versions." }
+              ]
+            },
+            {
+              "id": "compte",
+              "title": "Accès au jeu et compte joueur",
+              "blocks": [
+                { "type": "p", "text": "L’entraînement hors ligne est accessible sans compte. Les parties en ligne, les compétitions, l’écurie synchronisée et le porte-monnaie nécessitent un compte." },
+                { "type": "p", "text": "Vous pouvez créer un compte avec un **pseudo**, une **adresse e-mail** et un **mot de passe**, ou vous connecter avec **Google**. Vous vous engagez à fournir des informations exactes et à les tenir à jour." },
+                { "type": "list", "items": [
+                  "Un seul compte par personne. Les comptes multiples destinés à fausser les compétitions sont interdits.",
+                  "Vos identifiants sont personnels et confidentiels. Toute action réalisée depuis votre compte est réputée faite par vous.",
+                  "Votre pseudo ne doit ni usurper l’identité d’un tiers, ni être injurieux, discriminatoire, obscène ou publicitaire.",
+                  "En cas de perte ou d’utilisation frauduleuse de vos identifiants, prévenez-nous sans délai à {email}."
+                ] }
+              ]
+            },
+            {
+              "id": "age",
+              "title": "Âge minimum et mineurs",
+              "blocks": [
+                { "type": "p", "text": "Le Service est destiné aux personnes âgées d’au moins **13 ans**. Entre 13 et 15 ans, la création d’un compte et le traitement des données associées nécessitent l’accord du titulaire de l’autorité parentale, conformément à l’article 45 de la loi Informatique et Libertés." },
+                { "type": "p", "text": "Les parents ou représentants légaux restent responsables de l’usage du Service par le mineur et peuvent nous contacter à tout moment pour demander la suppression de son compte." }
+              ]
+            },
+            {
+              "id": "conduite",
+              "title": "Règles de conduite et fair-play",
+              "blocks": [
+                { "type": "p", "text": "La belote se joue à la loyale. En utilisant le Service, vous vous interdisez notamment :" },
+                { "type": "list", "items": [
+                  "toute forme de triche : communication des mains entre joueurs d’une même table, collusion, entente sur les résultats ;",
+                  "l’utilisation de logiciels tiers, d’automates ou de modifications de l’application non autorisés ;",
+                  "l’exploitation volontaire d’un bug ou d’une faille ; tout bug découvert doit nous être signalé ;",
+                  "la création de comptes multiples, l’achat, la vente ou le prêt de comptes ;",
+                  "tout propos haineux, harcelant, discriminatoire, violent ou illicite dans les pseudos, les noms d’équipe et le canal de discussion d’équipe ;",
+                  "toute tentative d’accès non autorisé aux serveurs, ou de perturbation du Service."
+                ] },
+                { "type": "p", "text": "Nous pouvons modérer, masquer ou renommer tout contenu contraire aux CGU, et appliquer les mesures prévues à l’article « Suspension et suppression du compte »." }
+              ]
+            },
+            {
+              "id": "robots",
+              "title": "Robots, stratégies et contenus des joueurs",
+              "blocks": [
+                { "type": "p", "text": "Le Service vous permet de nommer, d’habiller et de configurer des robots joueurs (personnalité, cerveau, stratégie). Ces robots restent des éléments du jeu : vous disposez d’un droit d’usage personnel, non exclusif et non cessible, dans le cadre du Service uniquement." },
+                { "type": "list", "items": [
+                  "Tous les robots sont animés par le même moteur de jeu et respectent les mêmes règles. Aucun robot ne voit les cartes cachées des autres joueurs.",
+                  "Vos robots peuvent jouer à votre place (Duo d’Acier), à vos côtés (Alliance Hybride) ou vous remplacer en cas de déconnexion : leurs décisions engagent votre compte comme si vous aviez joué.",
+                  "Les noms, pseudos et messages que vous publiez restent sous votre responsabilité. Vous nous accordez une licence gratuite, pour la durée de votre compte, pour les afficher aux autres joueurs dans le Service (tables, classements, tableaux de tournoi, rejeux)."
+                ] }
+              ]
+            },
+            {
+              "id": "jetons",
+              "title": "Jetons ◆ : une monnaie virtuelle sans valeur monétaire",
+              "blocks": [
+                { "type": "p", "text": "Les jetons ◆ sont une **monnaie de jeu virtuelle**. Ils permettent d’entrer dans des matchs et des tournois, d’acquérir des éléments cosmétiques et d’activer le statut VIP." },
+                { "type": "list", "items": [
+                  "Les jetons **n’ont aucune valeur monétaire**. Ils ne sont ni échangeables, ni remboursables, ni convertibles en argent réel, en biens ou en services hors du jeu.",
+                  "Aucun retrait n’est possible. Les jetons ne peuvent pas être transférés à un autre joueur, sauf mécanisme prévu par le jeu.",
+                  "Les jetons gagnés dans le jeu ne constituent pas un gain au sens de la réglementation des jeux d’argent. Kýdos Belote n’est pas un jeu d’argent et de hasard au sens du Code de la sécurité intérieure et ne relève pas de l’Autorité nationale des jeux (ANJ).",
+                  "Nous pouvons ajuster l’économie du jeu (barèmes, prix, récompenses) pour préserver son équilibre, sans que cela ouvre droit à une indemnité.",
+                  "Les jetons obtenus par erreur technique ou par fraude peuvent être retirés."
+                ] }
+              ]
+            },
+            {
+              "id": "mises",
+              "title": "Mises, gains, tournois et défis",
+              "blocks": [
+                { "type": "p", "text": "Certaines parties en ligne, matchs, défis et tournois demandent une mise en jetons. Les montants des mises, des gains et des grilles de récompense sont affichés avant l’inscription." },
+                { "type": "list", "items": [
+                  "**Prélèvement tout ou rien** : les mises sont prélevées au lancement de la partie. Si un seul participant ne peut pas payer, la partie ne démarre pas et les jetons déjà prélevés sont remboursés.",
+                  "Les gains sont crédités en fin de partie, ou selon la position finale pour les tournois.",
+                  "Un robot ne peut participer qu’à un seul tournoi par jour. Les frais d’inscription à un tournoi sont remboursés tant que celui-ci n’a pas démarré.",
+                  "Quitter une partie en cours peut entraîner le remplacement par un robot et la perte de la mise engagée.",
+                  "En cas d’incident technique affectant le résultat, nous pouvons annuler la partie et rembourser les mises."
+                ] }
+              ]
+            },
+            {
+              "id": "vip",
+              "title": "Récompenses, VIP, codes promo et achats",
+              "blocks": [
+                { "type": "list", "items": [
+                  "**Récompense du jour** : une récompense en jetons peut être réclamée une fois par jour (jour calendaire UTC).",
+                  "**VIP** : le statut VIP s’acquiert avec des jetons, pour une durée déterminée et cumulable. Il supprime la publicité, ajoute un cadre doré et une couronne, et augmente les points Kýdos gagnés selon le taux affiché dans l’application.",
+                  "**Codes promo** : un code est à usage unique par joueur, soumis à une date d’expiration et à un quota. Il ne peut être ni vendu ni échangé.",
+                  "**Vidéos récompensées** : regarder une publicité volontairement peut rapporter des jetons, dans la limite affichée."
+                ] },
+                { "type": "p", "text": "Si des achats intégrés en argent réel sont proposés, ils seront réalisés exclusivement via Google Play ou l’App Store, selon leurs conditions, et le prix sera affiché avant toute validation. Nous ne recevons jamais vos données bancaires. Conformément à l’article L.221-28 du Code de la consommation, le contenu numérique fourni immédiatement après l’achat ne bénéficie pas du droit de rétractation, sous réserve de votre accord exprès." }
+              ]
+            },
+            {
+              "id": "publicite",
+              "title": "Publicité",
+              "blocks": [
+                { "type": "p", "text": "La version gratuite du Service peut afficher des publicités fournies par **Google AdMob** (bannières, interstitiels, vidéos récompensées). Leur personnalisation dépend de votre consentement, recueilli dans l’application et modifiable à tout moment. Les joueurs VIP ne voient pas de publicité, à l’exception des vidéos récompensées qu’ils choisissent de regarder." }
+              ]
+            },
+            {
+              "id": "disponibilite",
+              "title": "Disponibilité et évolution du Service",
+              "blocks": [
+                { "type": "p", "text": "Nous faisons nos meilleurs efforts pour que le Service soit accessible en permanence, sans pouvoir le garantir : maintenance, mises à jour, incidents réseau ou cas de force majeure peuvent l’interrompre. Une connexion internet est nécessaire pour le jeu en ligne, à votre charge." },
+                { "type": "p", "text": "Le Service évolue : règles de score, formats, récompenses, contenus et fonctionnalités peuvent changer. Nous pouvons mettre fin au Service en prévenant les joueurs au moins 30 jours à l’avance." }
+              ]
+            },
+            {
+              "id": "sanctions",
+              "title": "Suspension et suppression du compte",
+              "blocks": [
+                { "type": "p", "text": "En cas de manquement aux CGU, nous pouvons, selon la gravité, adresser un avertissement, retirer des jetons ou des gains obtenus de manière irrégulière, suspendre temporairement le compte ou le bannir définitivement. Sauf urgence ou fraude caractérisée, vous êtes informé de la mesure et de son motif, et vous pouvez nous transmettre vos observations à {email}." },
+                { "type": "p", "text": "Vous pouvez supprimer votre compte à tout moment depuis les réglages de l’application ou en nous écrivant. La suppression entraîne la perte définitive de vos jetons, robots, statut VIP et historique, sans compensation." }
+              ]
+            },
+            {
+              "id": "propriete",
+              "title": "Propriété intellectuelle",
+              "blocks": [
+                { "type": "p", "text": "Le Service et tous ses éléments (logiciel, moteur de jeu, graphismes, mascottes, logos, marques Kýdos, sons, textes) sont protégés par le droit de la propriété intellectuelle et appartiennent à {company} ou à ses partenaires. Vous bénéficiez d’un droit d’usage personnel et non commercial. Toute reproduction, extraction, décompilation ou exploitation non autorisée est interdite, sauf dans les limites prévues par la loi." }
+              ]
+            },
+            {
+              "id": "responsabilite",
+              "title": "Responsabilité",
+              "blocks": [
+                { "type": "p", "text": "Nous sommes responsables de la bonne exécution du Service dans les conditions prévues par la loi. Notre responsabilité ne peut être engagée en cas de faute de votre part, de fait d’un tiers, de force majeure, ou de dysfonctionnement de votre appareil ou de votre connexion. Les jetons n’ayant aucune valeur monétaire, leur perte ne peut donner lieu à une indemnisation en argent. Rien dans les CGU ne limite les droits que vous tenez des dispositions impératives du droit de la consommation." }
+              ]
+            },
+            {
+              "id": "donnees",
+              "title": "Données personnelles",
+              "blocks": [
+                { "type": "p", "text": "Le traitement de vos données personnelles est décrit dans notre [politique de confidentialité](/confidentialite/)." }
+              ]
+            },
+            {
+              "id": "modification",
+              "title": "Modification des CGU",
+              "blocks": [
+                { "type": "p", "text": "Nous pouvons modifier les CGU, notamment pour suivre l’évolution du Service ou de la loi. Les modifications importantes vous sont notifiées dans l’application avant leur entrée en vigueur. Si vous continuez à utiliser le Service après cette date, vous acceptez la nouvelle version ; à défaut, vous pouvez supprimer votre compte." }
+              ]
+            },
+            {
+              "id": "droit",
+              "title": "Droit applicable, médiation et litiges",
+              "blocks": [
+                { "type": "p", "text": "Les CGU sont soumises au droit français. En cas de difficulté, écrivez-nous d’abord à {email} : nous cherchons toujours une solution amiable." },
+                { "type": "p", "text": "Si vous êtes consommateur et que votre réclamation écrite n’a pas abouti, vous pouvez recourir gratuitement au médiateur de la consommation dont nous relevons, conformément aux articles L.611-1 et suivants du Code de la consommation." },
+                { "type": "mediator" },
+                { "type": "p", "text": "À défaut d’accord amiable, le litige relève des juridictions compétentes selon les règles de droit commun ; le consommateur peut saisir, à son choix, la juridiction du lieu où il demeurait au moment de la conclusion du contrat ou de la survenance du fait dommageable." }
+              ]
+            },
+            {
+              "id": "contact",
+              "title": "Contact",
+              "blocks": [
+                { "type": "p", "text": "Pour toute question sur les CGU ou sur le Service : [{email}](mailto:{email})." }
+              ]
+            }
+          ]
+        },
+
+        "confidentialite": {
+          "title": "Politique de confidentialité",
+          "kicker": "Vos données, vos cartes",
+          "updated": "19 septembre 2026",
+          "intro": "Nous collectons le strict nécessaire pour faire tourner la table, et nous ne vendons pas vos données. Cette politique explique ce que nous traitons, pourquoi, combien de temps et comment exercer vos droits, conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés.",
+          "sections": [
+            {
+              "id": "responsable",
+              "title": "Responsable du traitement",
+              "blocks": [
+                { "type": "p", "text": "Le responsable du traitement de vos données est **{company}**, éditeur de Kýdos Belote." },
+                { "type": "identity" }
+              ]
+            },
+            {
+              "id": "perimetre",
+              "title": "Champ d’application",
+              "blocks": [
+                { "type": "p", "text": "Cette politique s’applique à l’application mobile Kýdos Belote (Android et iOS), à ses serveurs de jeu et au site vitrine kydosbelote.com. Les traitements réalisés par Google, Apple ou les plateformes de téléchargement pour leur propre compte relèvent de leurs politiques respectives." }
+              ]
+            },
+            {
+              "id": "donnees",
+              "title": "Données que nous traitons",
+              "blocks": [
+                { "type": "h", "text": "Compte" },
+                { "type": "list", "items": [
+                  "Pseudo, adresse e-mail et mot de passe. Le mot de passe est stocké sous forme hachée : nous ne le connaissons jamais en clair.",
+                  "Si vous choisissez **Se connecter avec Google** : identifiant de compte Google, adresse e-mail et, selon ce que vous autorisez, nom et photo de profil.",
+                  "Prénom et nom, s’ils sont renseignés (facultatif), avatar et préférences de profil."
+                ] },
+                { "type": "h", "text": "Jeu" },
+                { "type": "list", "items": [
+                  "Parties jouées : déroulé rejouable (annonces, cartes, timing), résultats, statistiques, score Kýdos et niveau.",
+                  "Robots : noms, apparence, personnalité, configuration du cerveau et historique de leurs parties.",
+                  "Porte-monnaie : solde de jetons et journal des transactions (récompenses, mises, gains, remboursements, codes promo), statut VIP.",
+                  "Social : équipe, rôle, invitations envoyées et reçues, messages du canal de discussion de l’équipe, classements."
+                ] },
+                { "type": "h", "text": "Technique" },
+                { "type": "list", "items": [
+                  "Adresse IP, journaux de connexion et d’erreurs, horodatages : pour la sécurité, la limitation de débit et le diagnostic.",
+                  "Informations sur l’appareil : système, version de l’application, langue."
+                ] },
+                { "type": "h", "text": "Publicité" },
+                { "type": "list", "items": [
+                  "Identifiant publicitaire de l’appareil et données d’interaction avec les annonces, traités par Google AdMob selon vos choix de consentement."
+                ] },
+                { "type": "h", "text": "Sur votre appareil uniquement" },
+                { "type": "list", "items": [
+                  "Réglages (volumes de la mélodie et des effets, langue, notifications) et données d’entraînement hors ligne sont stockés localement et ne nous sont pas transmis tant que vous ne jouez pas en ligne."
+                ] }
+              ]
+            },
+            {
+              "id": "finalites",
+              "title": "Finalités et bases légales",
+              "blocks": [
+                { "type": "list", "items": [
+                  "**Créer et gérer votre compte, faire fonctionner le jeu** (parties, écurie, compétitions, porte-monnaie, équipes) : exécution du contrat, c’est-à-dire les CGU.",
+                  "**Sécuriser le Service et lutter contre la triche et la fraude** (journaux, limitation de débit, détection d’abus, traçabilité des transactions de jetons) : notre intérêt légitime à proposer un jeu loyal et sûr.",
+                  "**Améliorer le jeu et corriger les erreurs** à partir de statistiques agrégées : notre intérêt légitime.",
+                  "**Afficher des publicités** : consentement pour la publicité personnalisée ; à défaut, des publicités non personnalisées peuvent être affichées sur la base de notre intérêt légitime.",
+                  "**Répondre à vos demandes** et vous informer des évolutions importantes : exécution du contrat et intérêt légitime.",
+                  "**Respecter nos obligations légales** (conservation de certaines données, réponse aux autorités) : obligation légale."
+                ] },
+                { "type": "p", "text": "Nous ne prenons aucune décision produisant des effets juridiques à votre égard sur le seul fondement d’un traitement automatisé. Les robots du jeu décident de leurs cartes, pas de vos droits." }
+              ]
+            },
+            {
+              "id": "publicite",
+              "title": "Publicité et consentement",
+              "blocks": [
+                { "type": "p", "text": "Au premier lancement, l’application affiche un écran de consentement conforme aux exigences européennes. Vous pouvez accepter, refuser ou paramétrer la publicité personnalisée, et modifier votre choix à tout moment depuis les réglages. Refuser n’empêche pas de jouer. Le statut VIP supprime la publicité, hors vidéos récompensées que vous choisissez de regarder." }
+              ]
+            },
+            {
+              "id": "destinataires",
+              "title": "Destinataires et sous-traitants",
+              "blocks": [
+                { "type": "p", "text": "Vos données sont accessibles aux seules personnes habilitées de {company}. Certaines informations sont visibles des autres joueurs par nature : pseudo, avatar, niveau, robots, résultats, classements et messages d’équipe. Nous faisons appel à des prestataires qui agissent sur nos instructions ou en tant que responsables distincts :" },
+                { "type": "list", "items": [
+                  "**Google** : connexion avec Google (Google Sign-In) et publicité (Google AdMob) ;",
+                  "**Google Play et Apple App Store** : distribution de l’application et, le cas échéant, achats intégrés ;",
+                  "**l’hébergeur de nos serveurs de jeu** et de nos bases de données ;",
+                  "**GitHub** : hébergement du site vitrine."
+                ] },
+                { "type": "p", "text": "Nous ne vendons ni ne louons vos données. Elles peuvent être communiquées aux autorités lorsque la loi l’exige." }
+              ]
+            },
+            {
+              "id": "transferts",
+              "title": "Transferts hors de l’Union européenne",
+              "blocks": [
+                { "type": "p", "text": "Certains prestataires, notamment Google et GitHub, peuvent traiter des données aux États-Unis. Ces transferts sont encadrés par la décision d’adéquation de la Commission européenne relative au EU-US Data Privacy Framework, pour les entreprises certifiées, ou à défaut par des clauses contractuelles types de la Commission européenne." }
+              ]
+            },
+            {
+              "id": "conservation",
+              "title": "Durées de conservation",
+              "blocks": [
+                { "type": "list", "items": [
+                  "**Compte et données de jeu** : tant que votre compte est actif. Un compte inactif pendant 3 ans est supprimé après un avertissement par e-mail.",
+                  "**Après suppression du compte** : effacement ou anonymisation sous 30 jours, sauf données que la loi nous impose de conserver.",
+                  "**Journaux techniques et de sécurité** : 12 mois maximum.",
+                  "**Journal des transactions de jetons** : pendant la durée du compte, pour garantir l’intégrité du porte-monnaie et traiter les réclamations.",
+                  "**Messages de l’équipe** : tant que l’équipe existe ou jusqu’à leur suppression.",
+                  "**Échanges avec le support** : 3 ans à compter du dernier contact.",
+                  "**Statistiques agrégées et anonymisées** : sans limite, car elles ne permettent plus de vous identifier."
+                ] }
+              ]
+            },
+            {
+              "id": "securite",
+              "title": "Sécurité",
+              "blocks": [
+                { "type": "p", "text": "Nous protégeons vos données par des mesures techniques et organisationnelles adaptées : chiffrement des échanges, mots de passe hachés, authentification par jetons à durée limitée, contrôle des droits à chaque requête, limitation de débit, journal d’audit des opérations d’administration et accès restreint aux personnes habilitées. Aucun système n’étant infaillible, nous vous informerons en cas de violation de données susceptible d’engendrer un risque élevé pour vos droits." }
+              ]
+            },
+            {
+              "id": "droits",
+              "title": "Vos droits",
+              "blocks": [
+                { "type": "p", "text": "Vous disposez des droits suivants sur vos données :" },
+                { "type": "list", "items": [
+                  "**accès** et copie de vos données ;",
+                  "**rectification** des données inexactes ;",
+                  "**effacement**, notamment via la suppression de votre compte ;",
+                  "**portabilité** des données que vous nous avez fournies, dans un format structuré ;",
+                  "**opposition** aux traitements fondés sur notre intérêt légitime ;",
+                  "**limitation** du traitement ;",
+                  "**retrait de votre consentement** à tout moment, notamment pour la publicité personnalisée ;",
+                  "**directives post-mortem** sur le sort de vos données après votre décès."
+                ] },
+                { "type": "p", "text": "Pour les exercer, écrivez à [{email}](mailto:{email}) depuis l’adresse liée à votre compte, ou en indiquant votre pseudo. Nous répondons dans un délai d’un mois, prolongeable de deux mois si la demande est complexe. Nous pouvons vous demander de justifier de votre identité en cas de doute raisonnable." },
+                { "type": "p", "text": "Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la **CNIL** (Commission nationale de l’informatique et des libertés), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, [www.cnil.fr](https://www.cnil.fr)." }
+              ]
+            },
+            {
+              "id": "mineurs",
+              "title": "Mineurs",
+              "blocks": [
+                { "type": "p", "text": "Le Service n’est pas destiné aux enfants de moins de 13 ans. Entre 13 et 15 ans, le traitement des données d’un mineur nécessite le consentement conjoint du mineur et du titulaire de l’autorité parentale. Si vous pensez qu’un enfant nous a transmis des données sans autorisation, contactez-nous : nous supprimerons son compte." }
+              ]
+            },
+            {
+              "id": "traceurs",
+              "title": "Cookies et traceurs",
+              "blocks": [
+                { "type": "p", "text": "**Site vitrine** : kydosbelote.com n’utilise **aucun cookie**, aucun outil de mesure d’audience et aucun traceur publicitaire. Il ne charge aucune ressource externe. Seule votre préférence de langue est enregistrée dans le stockage local de votre navigateur (localStorage). Elle ne quitte jamais votre appareil et vous pouvez l’effacer depuis les réglages de votre navigateur." },
+                { "type": "p", "text": "**Application** : l’application utilise le stockage local de l’appareil pour vos réglages et votre session, ainsi que le SDK Google AdMob pour la publicité, selon vos choix de consentement." }
+              ]
+            },
+            {
+              "id": "hebergement",
+              "title": "Hébergement",
+              "blocks": [
+                { "type": "host" },
+                { "type": "p", "text": "L’hébergeur du site vitrine peut enregistrer, pour des raisons de sécurité, l’adresse IP des visiteurs dans ses journaux techniques, conformément à sa propre politique de confidentialité." }
+              ]
+            },
+            {
+              "id": "modifications",
+              "title": "Modifications",
+              "blocks": [
+                { "type": "p", "text": "Nous pouvons mettre à jour cette politique. La date de dernière mise à jour figure en haut de la page. En cas de changement important, vous en serez informé dans l’application." }
+              ]
+            },
+            {
+              "id": "contact",
+              "title": "Contact",
+              "blocks": [
+                { "type": "p", "text": "Pour toute question sur vos données : [{email}](mailto:{email})." }
+              ]
+            }
+          ]
+        }
+      }
+    },
+
+    "en": {
+      "meta": {
+        "ogLocale": "en_US",
+        "home":            { "title": "Kýdos Belote — The belote contrée game where your robots play too", "description": "Kýdos Belote: real-time multiplayer belote contrée, a stable of robot players to train, a no-code strategy editor, tournaments of up to 128 players. Coming soon to Android and iOS." },
+        "cgu":             { "title": "Terms of Use — Kýdos Belote", "description": "Kýdos Belote terms of use: account, fair play, robots, virtual tokens with no monetary value, tournaments, VIP and advertising." },
+        "confidentialite": { "title": "Privacy Policy — Kýdos Belote", "description": "How Kýdos Belote collects, uses and protects your personal data, and how to exercise your rights (GDPR)." },
+        "notfound":        { "title": "Page not found — Kýdos Belote", "description": "This page doesn’t exist. Head back to the Kýdos Belote table." }
+      },
+
+      "ui": {
+        "skipLink": "Skip to content",
+        "menuOpen": "Open your hand (menu)",
+        "menuClose": "Close menu",
+        "menuTitle": "Your hand",
+        "menuHint": "Play a card to jump to that trick.",
+        "langLabel": "Language",
+        "langSwitchTo": "Passer en français",
+        "langShort": { "fr": "FR", "en": "EN" },
+        "trick": "Trick",
+        "tricks": "Tricks",
+        "points": "pts",
+        "us": "US",
+        "them": "THEM",
+        "home": "Home",
+        "backToTable": "Back to the table",
+        "toc": "Contents",
+        "lastUpdated": "Last updated:",
+        "comingSoon": "Soon",
+        "readMore": "Read more",
+        "prev": "Previous",
+        "next": "Next",
+        "close": "Close",
+        "zoom": "Enlarge screen",
+        "croupierName": "The dealer",
+        "croupierHide": "Hide the dealer",
+        "croupierShow": "Show the dealer",
+        "bonus": { "belote": "Belote!", "rebelote": "Rebelote!", "lastTrick": "Last trick" },
+        "capot": "Capot",
+        "ranks": { "A": "A", "R": "K", "D": "Q", "V": "J", "10": "10", "9": "9", "8": "8", "7": "7" },
+        "suits": { "heart": "hearts", "spade": "spades", "diamond": "diamonds", "club": "clubs" },
+        "external": "(new tab)",
+        "legalLinks": { "cgu": "Terms", "confidentialite": "Privacy" }
+      },
+
+      "loader": {
+        "brand": "KÝDOS",
+        "tagline": "BELOTE CONTRÉE",
+        "steps": {
+          "content": "Content received",
+          "fonts": "Waking up the fonts…",
+          "images": "Setting up the table…",
+          "ready": "Let’s deal!"
+        },
+        "log": "Loading {name}’s brain · OK",
+        "crewNames": ["Atné", "Perle", "Titan", "Givre"]
+      },
+
+      "nav": {
+        "donne": "The deal",
+        "annonces": "Bidding",
+        "jeu": "The table",
+        "ecurie": "The stable",
+        "cerveau": "The brain",
+        "formats": "Formats",
+        "arene": "The arena",
+        "cagnotte": "The pot",
+        "vitrine": "Showcase",
+        "maison": "The house",
+        "capot": "Capot"
+      },
+
+      "croupier": {
+        "donne": "Welcome to my table. Cut the deck, I’ll deal…",
+        "annonces": "Your turn to bid. Here, every bid is a promise.",
+        "jeu": "Contrée: 90% reading, 10% luck.",
+        "ecurie": "I train the best. Some already beat me.",
+        "cerveau": "This is where you wire their brain. Node by node.",
+        "formats": "Three tables. You choose who sits.",
+        "arene": "Capot, contre, glory. In that order.",
+        "cagnotte": "Belote! Tokens are for glory. Not for the bank.",
+        "vitrine": "Rebelote! And the last trick: look at these screens.",
+        "maison": "The house never cheats. It builds.",
+        "capot": "Capot! You took every trick. Respect.",
+        "legal": "House rules. Read them before you cut.",
+        "notfound": "That card isn’t in the deck…"
+      },
+
+      "hero": {
+        "kicker": "Belote contrée × AI",
+        "title": "KÝDOS",
+        "subtitle": "BELOTE",
+        "tagline": ["Train robots.", "Design their strategy.", "Claim glory."],
+        "lead": "Belote contrée in real time, with an idea you won’t find anywhere else: you don’t just play. You raise, tune and send your own stable of robots into battle.",
+        "ctaPrimary": "Cut the deck",
+        "ctaSecondary": "Coming soon to Android & iOS",
+        "handLabel": "Your hand: 8 tricks to take",
+        "chips": [
+          { "value": "32", "label": "cards" },
+          { "value": "4", "label": "seats" },
+          { "value": "8", "label": "tricks" },
+          { "value": "∞", "label": "strategies" }
+        ],
+        "ticker": [
+          { "tone": "live",   "tag": "LIVE",  "text": "♥ Hybrid alliance · US 1 — 0 THEM · round 2 · your robot plays for you" },
+          { "tone": "acier",  "tag": "DUO",   "text": "♠ Steel duo · Titan & Givre win the table" },
+          { "tone": "royal",  "tag": "12:04", "text": "♦ Grand Royal Square Live · 123 / 128 registered" },
+          { "tone": "nous",   "tag": "CHALL.", "text": "★ Allied crusade · challenge beaten by Perle" },
+          { "tone": "coin",   "tag": "◆",     "text": "Daily reward · +500 ◆" },
+          { "tone": "xp",     "tag": "⚡",     "text": "Atné reaches level 3 · new avatar unlocked" }
+        ]
+      },
+
+      "chapters": {
+        "annonces": {
+          "kicker": "First trick · the bidding",
+          "title": ["More than", "a card game"],
+          "lead": "At Kýdos, every bid raises the stakes. Follow the bidding: by 160, you’ll know exactly what we’re putting on the table.",
+          "bids": [
+            { "value": "80",  "suit": "heart",   "title": "Real belote contrée", "text": "The rules you know: bidding, trumps, belote-rebelote, last trick, capot. No shortcuts, with a complete game engine." },
+            { "value": "100", "suit": "spade",   "title": "Robots you raise", "text": "Every player owns a stable. Your robots play beside you, instead of you, and level up just like you." },
+            { "value": "120", "suit": "diamond", "title": "A brain you design", "text": "Tune their personality, pick their brain, wire their decision logic. Without writing a single line of code." },
+            { "value": "140", "suit": "club",    "title": "An arena that never sleeps", "text": "Quick matches, challenges, knockout tournaments of up to 128 players, spectators and leaderboards." },
+            { "value": "160", "suit": "heart",   "title": "All of it, in your pocket", "text": "A native mobile app for Android and iOS, built for landscape, playable offline for practice." }
+          ],
+          "contre": { "label": "CONTRÉE!", "text": "Doubting us? Good. We love being countered." },
+          "surcontre": { "label": "SURCONTRÉE!", "text": "…so we redouble: keep scrolling, it’s all proven screen by screen." }
+        },
+
+        "jeu": {
+          "kicker": "Second trick · the table",
+          "title": ["The table,", "in real time"],
+          "lead": "Four seats, thirty-two cards and real-time sync between every player. You bid, you counter, you redouble. Every trick counts, and every game can be replayed.",
+          "features": [
+            { "icon": "bid",     "title": "Strategic bidding", "text": "Bid, counter, redouble: every decision weighs on the score." },
+            { "icon": "live",    "title": "Real-time multiplayer", "text": "Humans and robots at the same table, with no noticeable lag." },
+            { "icon": "replay",  "title": "Replay & analysis", "text": "Every game is archived and replays move by move: hands, bids, timing." },
+            { "icon": "stats",   "title": "Statistics", "text": "Tricks, contracts made or lost, counters, capots, belotes: it’s all counted." },
+            { "icon": "offline", "title": "Offline practice", "text": "Free and offline, against your robots or alongside them." },
+            { "icon": "eye",     "title": "Spectators", "text": "Up to 10 spectators per match. They never see the hands." }
+          ],
+          "consoleTitle": "Engine console",
+          "consoleCaption": "What a robot thinks during the bidding, live.",
+          "console": [
+            { "lvl": "INF", "text": "Opening analysis: looking for a strong suit (J + 9 + ≥ 4 trumps)." },
+            { "lvl": "INF", "text": "WEAK opening 90 ♥ (5 trumps)." },
+            { "lvl": "INF", "text": "Answering partner (90 ♥) · Aces = 1 · Jack = no · trumps = 1." },
+            { "lvl": "WRN", "text": "No trump Jack on a 90 opening: I PASS and keep 1 Ace." },
+            { "lvl": "INF", "text": "Answer: 100 ♥ [Jack + 10]." },
+            { "lvl": "DBG", "text": "Playable cards: 8♥ 7♥ 9♠ 8♣ J♦ J♥ 10♥ A♥" },
+            { "lvl": "INF", "text": "Can win the trick · p(lowest card) = 60% · draw = 0.18 → 7♥" },
+            { "lvl": "INF", "text": "Trick 3 won · US +21" }
+          ],
+          "deviceAlt": "The Kýdos game table rendered in WebGL: four seats, the player’s hand and the current trick.",
+          "consoleAlt": "Local practice: bidding window and engine console detailing the robots’ reasoning."
+        },
+
+        "ecurie": {
+          "kicker": "Third trick · the stable",
+          "title": ["Your robots.", "Your personality."],
+          "lead": "Every player owns a stable of robots. Give them character, watch them play, improve and level up, exactly like you.",
+          "lab": {
+            "title": "Laboratory",
+            "subtitle": "Tune a robot and watch its personality change.",
+            "sliders": {
+              "aggression": { "label": "Aggressiveness", "hint": "Bids high, counters often." },
+              "focus":      { "label": "Focus", "hint": "Remembers every card played." },
+              "speed":      { "label": "Velocity", "hint": "Decides fast, gives no breathing room." }
+            },
+            "styleLabel": "Play style",
+            "randomize": "Random robot",
+            "archetypes": {
+              "champion":  { "name": "The Champion", "text": "Everything maxed out. It wins, and it knows it." },
+              "contreur":  { "name": "The Counter", "text": "Aggressive style: counters often. Keep your trumps." },
+              "stratege":  { "name": "The Strategist", "text": "Counts every card played and plays the next move." },
+              "eclair":    { "name": "The Flash", "text": "Plays fast and puts the whole table under pressure." },
+              "prudent":   { "name": "The Careful", "text": "Bids little and almost never goes down." },
+              "equilibre": { "name": "The Balanced", "text": "Solid everywhere, the perfect partner to start with." }
+            }
+          },
+          "roles": [
+            { "suit": "heart",   "title": "Beside you", "text": "In Hybrid Alliance, your robot is your teammate." },
+            { "suit": "spade",   "title": "Instead of you", "text": "In Steel Duo, your robots play alone, even while you sleep." },
+            { "suit": "diamond", "title": "As backup", "text": "Disconnected? A substitute robot takes over your hand." },
+            { "suit": "club",    "title": "It levels up", "text": "Kýdos score, levels, avatars: it grows with every game." }
+          ],
+          "deviceAlt": "The app’s Stable screen: three robots, their levels, scores and form."
+        },
+
+        "cerveau": {
+          "kicker": "Fourth trick · the brain",
+          "title": ["Design", "their intelligence"],
+          "lead": "No code. Connect visual nodes (conditions, calculations, actions) and build your robot’s decision logic. The same engine drives every robot, with strictly equal treatment.",
+          "run": "Run the decision",
+          "running": "Deciding…",
+          "legend": { "trigger": "Trigger", "condition": "Condition", "compute": "Calculation", "action": "Action" },
+          "nodes": {
+            "trigger":  { "title": "My turn to bid", "detail": "Bidding · round 1" },
+            "jack":     { "title": "Trump Jack?", "detail": "hand ∋ J♥" },
+            "trumps":   { "title": "Trumps ≥ 4?", "detail": "count(♥) = 5" },
+            "score":    { "title": "Hand strength", "detail": "= 94 points" },
+            "partner":  { "title": "Partner has bid?", "detail": "90 ♥" },
+            "bid":      { "title": "Bid 100 ♥", "detail": "action" }
+          },
+          "output": "Atné bids 100 ♥",
+          "presets": { "title": "Ready-made brains", "items": ["Standard", "Classic", "Aggressive", "Careful"] },
+          "deviceAlt": "The robot editor: aggressiveness, risk-taking and card memory settings, brain selection."
+        },
+
+        "formats": {
+          "kicker": "Fifth trick · the formats",
+          "title": ["Three tables,", "three ways to win"],
+          "lead": "From 100% robots to 100% humans, you choose who sits down. Each format has its own colour and glyph, everywhere in the app.",
+          "seatLabels": { "robot": "Robot", "human": "Human" },
+          "items": {
+            "acier":   { "name": "Steel Duo", "composition": "2 robots × 2", "tagline": "100% robots", "text": "No human at the table: the game runs server-side, instantly. Send your robots in and collect the result later." },
+            "hybride": { "name": "Hybrid Alliance", "composition": "1 human + 1 robot × 2", "tagline": "You and your robot", "text": "Team up with your own robot against another human-robot duo. Cooperation becomes a weapon." },
+            "royal":   { "name": "Royal Square", "composition": "4 humans", "tagline": "Classic belote", "text": "Four players, two teams, belote contrée in its purest form, with two winners." }
+          },
+          "deviceAlt": "The Quick match screen: the Steel duo, Hybrid alliance and Royal square formats."
+        },
+
+        "arene": {
+          "kicker": "Sixth trick · the arena",
+          "title": ["Tournaments,", "challenges & glory"],
+          "lead": "Knockout tournaments from 4 to 128 players, with a bracket that fills up live. Challenges against the house champions. Leaderboards, teams and a community.",
+          "bracketTitle": "Evening cup · live",
+          "bracketRounds": ["Quarters", "Semis", "Final", "Champion"],
+          "live": "LIVE",
+          "spectators": "spectators",
+          "stats": [
+            { "value": "128", "label": "players per tournament, at most" },
+            { "value": "1",   "label": "tournament per robot per day" },
+            { "value": "10",  "label": "spectators per match" },
+            { "value": "3",   "label": "steps on the podium" }
+          ],
+          "community": [
+            { "icon": "trophy", "title": "Challenges", "text": "Beat the house champions to win ◆." },
+            { "icon": "users",  "title": "Teams", "text": "Create your team: its score is the sum of its members’ points." },
+            { "icon": "chart",  "title": "Leaderboards", "text": "Players, robots and teams, weekly or seasonal." },
+            { "icon": "chat",   "title": "Team chat", "text": "One channel per team to prepare the next tournament." }
+          ],
+          "deviceAlt": "A live tournament bracket: round of 16, quarter-finals, semi-finals and final.",
+          "podiumAlt": "The end-of-tournament podium: first, second and third place."
+        },
+
+        "cagnotte": {
+          "kicker": "Seventh trick · the pot",
+          "title": ["Tokens, VIP", "& levels"],
+          "lead": "◆ tokens get you into matches and tournaments, unlock animations and buy VIP status. You earn them by playing, beating challenges and every single day.",
+          "daily": {
+            "label": "Daily reward",
+            "amount": 500,
+            "streak": "Streak",
+            "days": "d",
+            "claim": "Claim",
+            "claimed": "Claimed! Come back tomorrow."
+          },
+          "vip": {
+            "label": "VIP",
+            "title": "Go VIP",
+            "perks": ["No ads", "Golden frame and crown", "+3% Kýdos points on every win"],
+            "note": "Paid in tokens. Duration stacks."
+          },
+          "level": {
+            "label": "Level",
+            "value": 1,
+            "current": 320,
+            "target": 500,
+            "reward": "180 pts to go: “Golden glasses” avatar"
+          },
+          "disclaimer": "◆ tokens are a virtual in-game currency: they have no monetary value and can never be converted into real money.",
+          "deviceAlt": "The wallet: token balance, daily reward, rewarded video, promo code and history."
+        },
+
+        "vitrine": {
+          "kicker": "Eighth trick · the showcase",
+          "title": ["Every screen", "is a card"],
+          "lead": "Shuffle the deck: here is the app as it really is, screen by screen. Landscape only, Neon Arcade theme, no hard-coded values.",
+          "shuffle": "Shuffle the deck",
+          "all": "All",
+          "counter": "Screen",
+          "groups": {
+            "jouer": "Play",
+            "competition": "Compete",
+            "ecurie": "Stable",
+            "communaute": "Community",
+            "boutique": "Shop",
+            "profil": "Profile"
+          },
+          "specs": [
+            { "value": "WebGL", "label": "PixiJS table" },
+            { "value": "6", "label": "table themes" },
+            { "value": "SVG", "label": "parametric mascots" },
+            { "value": "2", "label": "audio buses: music & effects" },
+            { "value": "0", "label": "network needed to practise" },
+            { "value": "2", "label": "platforms: Android & iOS" }
+          ],
+          "items": {
+            "accueil":            { "title": "Home", "caption": "The hub: quick game, live match, daily reward, tournament and challenge of the moment.", "alt": "Kýdos home screen with the quick game, daily reward and next tournament." },
+            "table-pixi":         { "title": "The table", "caption": "The WebGL game table, with the theme’s felt and card backs.", "alt": "Kýdos belote table with the player’s hand and the bidding." },
+            "entrainement":       { "title": "Practice", "caption": "Set up your game: seats, visible cards, number of rounds.", "alt": "Practice game setup screen." },
+            "victoire":           { "title": "Game over", "caption": "Victory, final score and Kýdos points earned.", "alt": "Victory screen at the end of a game with a score of 1012 to 846." },
+            "tables-en-ligne":    { "title": "Online tables", "caption": "The lobby: join a table or create your own.", "alt": "List of online tables with free seats." },
+            "match-rapide":       { "title": "Quick match", "caption": "The three formats, their stakes and their winnings.", "alt": "Quick match screen with Steel duo, Hybrid alliance and Royal square." },
+            "composer-equipe":    { "title": "Build your team", "caption": "Pick your teammate and your substitute before signing up.", "alt": "Team building screen with the stake summary." },
+            "matchmaking":        { "title": "Matchmaking", "caption": "Live opponent search, with an estimated wait.", "alt": "Opponent search screen with a timer." },
+            "duo-acier-live":     { "title": "Steel duo, live", "caption": "Your robots play alone: follow the game like a spectator.", "alt": "Steel duo match in progress between four robots." },
+            "tournois":           { "title": "Tournaments", "caption": "Upcoming, live, finished: the whole season at a glance.", "alt": "List of upcoming, live and finished tournaments." },
+            "tournoi-inscrit":    { "title": "Registration", "caption": "Prizes by position, countdown and remaining seats.", "alt": "Details of a tournament the player has joined." },
+            "salle-attente":      { "title": "Waiting room", "caption": "The next match starts in a few seconds.", "alt": "Tournament waiting room with a countdown." },
+            "tableau-tournoi":    { "title": "Tournament bracket", "caption": "The bracket fills up live, match after match.", "alt": "Knockout tournament bracket." },
+            "podium":             { "title": "Podium", "caption": "Glory, in three steps.", "alt": "End-of-tournament podium." },
+            "defis":              { "title": "Challenges", "caption": "Beat the house champions to win ◆.", "alt": "List of Kýdos challenges." },
+            "croisade-alliee":    { "title": "Allied crusade", "caption": "A Hybrid alliance challenge against the house champions.", "alt": "Details of the Allied crusade challenge." },
+            "en-direct":          { "title": "Live", "caption": "Tournaments and public tables open to spectators.", "alt": "List of live games open to spectators." },
+            "premier-robot":      { "title": "First robot", "caption": "Onboarding: create and name your first robot.", "alt": "Creating the first robot during onboarding." },
+            "ecurie":             { "title": "Stable", "caption": "Your robots, their level, score and form.", "alt": "Stable screen with several robots." },
+            "editeur-strategie":  { "title": "Strategy editor", "caption": "Aggressiveness, risk-taking, card memory, brain.", "alt": "A robot’s strategy editor with sliders." },
+            "equipe":             { "title": "My team", "caption": "Members, roles, team score and invitations.", "alt": "Team management screen." },
+            "classements":        { "title": "Leaderboards", "caption": "Players, robots and teams, weekly or seasonal.", "alt": "Player leaderboard with the leader highlighted." },
+            "boutique-vip":       { "title": "VIP shop", "caption": "No ads, golden frame and +3% points.", "alt": "VIP shop with 1-day, 10-day and 30-day offers." },
+            "animations":         { "title": "Animations", "caption": "Champion’s salute, victory dance, golden glasses…", "alt": "Animation shop for players and robots." },
+            "porte-monnaie":      { "title": "Wallet", "caption": "Balance, daily reward, promo code and history.", "alt": "Token wallet screen." },
+            "profil":             { "title": "Profile", "caption": "Your play style, your wins and your robots.", "alt": "Player profile screen." },
+            "statistiques":       { "title": "Statistics", "caption": "A game in detail: tricks, belotes, capots, rounds.", "alt": "Detailed statistics of a game." },
+            "rejeu":              { "title": "Replay", "caption": "Watch every deal again, at the speed you want.", "alt": "Game replay with playback controls." },
+            "niveau-recompenses": { "title": "Levels & rewards", "caption": "Every level unlocks an avatar, a robot or an animation.", "alt": "Level and reward ladder." },
+            "jetons-niveau":      { "title": "Tokens & level", "caption": "Onboarding explains tokens, levels and first goals.", "alt": "Onboarding step about tokens and level." },
+            "connexion":          { "title": "Sign in", "caption": "Username and password, or sign in with Google.", "alt": "Sign-in screen." },
+            "chargement":         { "title": "Loading", "caption": "The game’s loading screen, which inspired this site’s.", "alt": "Loading screen with four robots and a retro grid." }
+          }
+        },
+
+        "maison": {
+          "kicker": "The house",
+          "title": ["Who runs", "the table"],
+          "lead": "Kýdos is a showcase of what the Cephalo Sophie ecosystem can build: a real-time multiplayer card game is one of the most demanding kinds of software there is.",
+          "studios": [
+            { "id": "cephalosophie", "name": "Cephalosophie", "url": "https://cephalosophie.com", "domain": "cephalosophie.com", "motto": "“The wisdom of the mind”", "text": "A French software publisher and studio combining artificial intelligence with traditional card games. Cephalosophie publishes Kýdos Belote." },
+            { "id": "kantoaplo", "name": "KANTO APLO", "url": "https://kantoaplo.com", "domain": "kantoaplo.com", "motto": "“Make it simple”", "text": "The ecosystem’s no-code platform, and the technical project behind Kýdos: infrastructure, game engine, AI training." }
+          ],
+          "stackTitle": "What Kýdos brings together",
+          "stack": [
+            { "title": "Real time", "text": "State sync between every player." },
+            { "title": "Decision AI", "text": "A data-driven robot engine." },
+            { "title": "Virtual economy", "text": "Traced transactions, guaranteed integrity." },
+            { "title": "Graphics", "text": "A WebGL table, parametric mascots." },
+            { "title": "Native mobile", "text": "Android and iOS, one codebase." },
+            { "title": "Back office", "text": "Everything is tuned without redeploying." }
+          ]
+        },
+
+        "capot": {
+          "kicker": "Last trick",
+          "title": "CAPOT!",
+          "lead": "You took all eight tricks. The only thing missing at the table is you.",
+          "availability": "Coming soon to Android & iOS",
+          "stores": {
+            "google-play": { "top": "Coming soon on", "name": "Google Play" },
+            "app-store": { "top": "Coming soon on the", "name": "App Store" }
+          },
+          "contactTitle": "A question, a partnership, a tournament?",
+          "contactCta": "Write to the team",
+          "replay": "Deal again"
+        }
+      },
+
+      "footer": {
+        "tagline": "The belote contrée game where your robots play too.",
+        "madeBy": "A game published by Cephalo Sophie",
+        "rights": "All rights reserved.",
+        "contact": "Contact",
+        "legalTitle": "Legal",
+        "exploreTitle": "Explore",
+        "note": "Kýdos ◆ tokens are virtual and have no monetary value."
+      },
+
+      "notfound": {
+        "code": ["4", "4"],
+        "title": "Page not found",
+        "text": "This link leads nowhere. The game goes on back home.",
+        "cta": "Back to home"
+      },
+
+      "legal": {
+        "fields": {
+          "name": "Company name",
+          "legalForm": "Legal form",
+          "shareCapital": "Share capital",
+          "registration": "Registration",
+          "vatNumber": "EU VAT number",
+          "address": "Registered office",
+          "publicationDirector": "Publication director",
+          "email": "Email",
+          "website": "Website",
+          "siteHost": "Website host",
+          "gameServerHost": "Game server host",
+          "consumerMediator": "Consumer mediator"
+        },
+        "cgu": {
+          "title": "Terms of Use",
+          "kicker": "House rules",
+          "updated": "September 19, 2026",
+          "intro": "Welcome to the Kýdos Belote table. These terms govern your use of the game and its services. They are written to be read: take five minutes before you cut the deck.",
+          "sections": [
+            {
+              "id": "objet",
+              "title": "Purpose and acceptance",
+              "blocks": [
+                { "type": "p", "text": "These terms of use (the **Terms**) govern access to and use of the **Kýdos Belote** mobile app (Android and iOS), its online services and the kydosbelote.com website (together, the **Service**)." },
+                { "type": "p", "text": "By creating an account or using the Service, you accept the Terms in full. If you do not accept them, do not use the Service." }
+              ]
+            },
+            {
+              "id": "editeur",
+              "title": "Publisher of the Service",
+              "blocks": [
+                { "type": "p", "text": "The Service is published by **{company}**, a French software publisher." },
+                { "type": "identity" },
+                { "type": "host" }
+              ]
+            },
+            {
+              "id": "service",
+              "title": "Description of the Service",
+              "blocks": [
+                { "type": "p", "text": "Kýdos Belote is a real-time multiplayer **belote contrée** game. In particular, it lets you:" },
+                { "type": "list", "items": [
+                  "play against other players or robots, online or in offline practice;",
+                  "create, configure and level up a stable of robot players;",
+                  "take part in quick matches (Steel Duo, Hybrid Alliance, Royal Square), challenges and tournaments;",
+                  "join a team, chat in the team channel and appear on leaderboards;",
+                  "use virtual tokens (◆) and access VIP status."
+                ] },
+                { "type": "p", "text": "The Service is provided as it stands at its current stage of development. Features may be added, changed or removed from one version to the next." }
+              ]
+            },
+            {
+              "id": "compte",
+              "title": "Access and player account",
+              "blocks": [
+                { "type": "p", "text": "Offline practice is available without an account. Online games, competitions, the synced stable and the wallet require an account." },
+                { "type": "p", "text": "You can create an account with a **username**, an **email address** and a **password**, or sign in with **Google**. You agree to provide accurate information and keep it up to date." },
+                { "type": "list", "items": [
+                  "One account per person. Multiple accounts used to distort competitions are forbidden.",
+                  "Your credentials are personal and confidential. Any action taken from your account is deemed to have been taken by you.",
+                  "Your username must not impersonate anyone or be insulting, discriminatory, obscene or promotional.",
+                  "If your credentials are lost or misused, tell us immediately at {email}."
+                ] }
+              ]
+            },
+            {
+              "id": "age",
+              "title": "Minimum age and minors",
+              "blocks": [
+                { "type": "p", "text": "The Service is intended for people aged **13 or over**. Between 13 and 15, creating an account and processing the related data require the consent of a holder of parental authority, in accordance with Article 45 of the French Data Protection Act." },
+                { "type": "p", "text": "Parents or legal guardians remain responsible for the minor’s use of the Service and may contact us at any time to request deletion of the account." }
+              ]
+            },
+            {
+              "id": "conduite",
+              "title": "Code of conduct and fair play",
+              "blocks": [
+                { "type": "p", "text": "Belote is played fair. When using the Service, you must not, in particular:" },
+                { "type": "list", "items": [
+                  "cheat in any way: sharing hands between players at the same table, collusion, fixing results;",
+                  "use third-party software, bots or unauthorised modifications of the app;",
+                  "knowingly exploit a bug or vulnerability; any bug you find must be reported to us;",
+                  "create multiple accounts, or buy, sell or lend accounts;",
+                  "post hateful, harassing, discriminatory, violent or unlawful content in usernames, team names or the team chat;",
+                  "attempt to access our servers without authorisation, or disrupt the Service."
+                ] },
+                { "type": "p", "text": "We may moderate, hide or rename any content that breaches the Terms, and apply the measures set out in “Suspension and account deletion”." }
+              ]
+            },
+            {
+              "id": "robots",
+              "title": "Robots, strategies and player content",
+              "blocks": [
+                { "type": "p", "text": "The Service lets you name, dress and configure robot players (personality, brain, strategy). These robots remain game items: you have a personal, non-exclusive and non-transferable right to use them, within the Service only." },
+                { "type": "list", "items": [
+                  "Every robot is driven by the same game engine and follows the same rules. No robot can see other players’ hidden cards.",
+                  "Your robots may play instead of you (Steel Duo), beside you (Hybrid Alliance) or replace you if you disconnect: their decisions bind your account as if you had played.",
+                  "Names, usernames and messages you post remain your responsibility. You grant us a free licence, for the lifetime of your account, to display them to other players within the Service (tables, leaderboards, brackets, replays)."
+                ] }
+              ]
+            },
+            {
+              "id": "jetons",
+              "title": "◆ tokens: a virtual currency with no monetary value",
+              "blocks": [
+                { "type": "p", "text": "◆ tokens are a **virtual in-game currency**. They let you enter matches and tournaments, get cosmetic items and activate VIP status." },
+                { "type": "list", "items": [
+                  "Tokens **have no monetary value**. They cannot be exchanged, refunded or converted into real money, goods or services outside the game.",
+                  "Tokens can never be withdrawn. They cannot be transferred to another player, except through a mechanism provided by the game.",
+                  "Tokens won in the game are not winnings within the meaning of gambling regulations. Kýdos Belote is not a gambling game under the French Internal Security Code and does not fall under the French gaming authority (ANJ).",
+                  "We may adjust the game economy (scales, prices, rewards) to keep it balanced, without this giving rise to any compensation.",
+                  "Tokens obtained through a technical error or fraud may be removed."
+                ] }
+              ]
+            },
+            {
+              "id": "mises",
+              "title": "Stakes, winnings, tournaments and challenges",
+              "blocks": [
+                { "type": "p", "text": "Some online games, matches, challenges and tournaments require a stake in tokens. Stakes, winnings and prize tables are shown before you sign up." },
+                { "type": "list", "items": [
+                  "**All-or-nothing collection**: stakes are collected when the game starts. If a single participant cannot pay, the game does not start and any tokens already collected are refunded.",
+                  "Winnings are credited at the end of the game, or according to final position in tournaments.",
+                  "A robot may enter only one tournament per day. Tournament entry fees are refunded as long as the tournament has not started.",
+                  "Leaving a game in progress may result in replacement by a robot and loss of the stake.",
+                  "If a technical incident affects the result, we may cancel the game and refund the stakes."
+                ] }
+              ]
+            },
+            {
+              "id": "vip",
+              "title": "Rewards, VIP, promo codes and purchases",
+              "blocks": [
+                { "type": "list", "items": [
+                  "**Daily reward**: a token reward can be claimed once per day (UTC calendar day).",
+                  "**VIP**: VIP status is bought with tokens, for a fixed and stackable duration. It removes ads, adds a golden frame and a crown, and increases the Kýdos points you earn at the rate shown in the app.",
+                  "**Promo codes**: a code can be used once per player, and is subject to an expiry date and a quota. It cannot be sold or traded.",
+                  "**Rewarded videos**: choosing to watch an ad may earn you tokens, within the limit shown."
+                ] },
+                { "type": "p", "text": "If real-money in-app purchases are offered, they will be made exclusively through Google Play or the App Store, under their terms, and the price will be shown before you confirm. We never receive your payment details. Under Article L.221-28 of the French Consumer Code, digital content supplied immediately after purchase is not subject to the right of withdrawal, provided you have expressly agreed to this." }
+              ]
+            },
+            {
+              "id": "publicite",
+              "title": "Advertising",
+              "blocks": [
+                { "type": "p", "text": "The free version of the Service may show ads provided by **Google AdMob** (banners, interstitials, rewarded videos). Their personalisation depends on your consent, collected in the app and changeable at any time. VIP players see no ads, except rewarded videos they choose to watch." }
+              ]
+            },
+            {
+              "id": "disponibilite",
+              "title": "Availability and changes to the Service",
+              "blocks": [
+                { "type": "p", "text": "We do our best to keep the Service available at all times, but cannot guarantee it: maintenance, updates, network incidents or force majeure may interrupt it. Online play requires an internet connection, at your own expense." },
+                { "type": "p", "text": "The Service evolves: scoring rules, formats, rewards, content and features may change. We may end the Service by notifying players at least 30 days in advance." }
+              ]
+            },
+            {
+              "id": "sanctions",
+              "title": "Suspension and account deletion",
+              "blocks": [
+                { "type": "p", "text": "If you breach the Terms, depending on the severity, we may issue a warning, remove tokens or winnings obtained improperly, temporarily suspend the account or ban it permanently. Except in urgent cases or proven fraud, you will be told about the measure and its reason, and you may send us your comments at {email}." },
+                { "type": "p", "text": "You can delete your account at any time from the app settings or by writing to us. Deletion permanently removes your tokens, robots, VIP status and history, without compensation." }
+              ]
+            },
+            {
+              "id": "propriete",
+              "title": "Intellectual property",
+              "blocks": [
+                { "type": "p", "text": "The Service and all its elements (software, game engine, graphics, mascots, logos, Kýdos trademarks, sounds, texts) are protected by intellectual property law and belong to {company} or its partners. You have a personal, non-commercial right of use. Any unauthorised reproduction, extraction, decompilation or exploitation is forbidden, except within the limits allowed by law." }
+              ]
+            },
+            {
+              "id": "responsabilite",
+              "title": "Liability",
+              "blocks": [
+                { "type": "p", "text": "We are responsible for the proper performance of the Service under the conditions set by law. We are not liable in the event of your own fault, the act of a third party, force majeure, or a malfunction of your device or connection. As tokens have no monetary value, their loss cannot give rise to monetary compensation. Nothing in the Terms limits the rights you hold under mandatory consumer law." }
+              ]
+            },
+            {
+              "id": "donnees",
+              "title": "Personal data",
+              "blocks": [
+                { "type": "p", "text": "How we process your personal data is described in our [privacy policy](/confidentialite/)." }
+              ]
+            },
+            {
+              "id": "modification",
+              "title": "Changes to the Terms",
+              "blocks": [
+                { "type": "p", "text": "We may change the Terms, in particular to keep up with the Service or the law. Significant changes are notified in the app before they take effect. If you keep using the Service after that date, you accept the new version; otherwise, you may delete your account." }
+              ]
+            },
+            {
+              "id": "droit",
+              "title": "Governing law, mediation and disputes",
+              "blocks": [
+                { "type": "p", "text": "The Terms are governed by French law. If there is a problem, please write to us first at {email}: we always look for an amicable solution." },
+                { "type": "p", "text": "If you are a consumer and your written complaint has not been resolved, you may use, free of charge, the consumer mediator we belong to, in accordance with Articles L.611-1 et seq. of the French Consumer Code." },
+                { "type": "mediator" },
+                { "type": "p", "text": "Failing an amicable agreement, the dispute will be brought before the competent courts under ordinary rules; as a consumer, you may choose the court of the place where you lived when the contract was concluded or when the harmful event occurred." }
+              ]
+            },
+            {
+              "id": "contact",
+              "title": "Contact",
+              "blocks": [
+                { "type": "p", "text": "For any question about the Terms or the Service: [{email}](mailto:{email})." }
+              ]
+            }
+          ]
+        },
+
+        "confidentialite": {
+          "title": "Privacy Policy",
+          "kicker": "Your data, your cards",
+          "updated": "September 19, 2026",
+          "intro": "We collect only what we need to keep the table running, and we do not sell your data. This policy explains what we process, why, for how long and how to exercise your rights, in accordance with the General Data Protection Regulation (GDPR) and the French Data Protection Act.",
+          "sections": [
+            {
+              "id": "responsable",
+              "title": "Data controller",
+              "blocks": [
+                { "type": "p", "text": "The controller of your data is **{company}**, publisher of Kýdos Belote." },
+                { "type": "identity" }
+              ]
+            },
+            {
+              "id": "perimetre",
+              "title": "Scope",
+              "blocks": [
+                { "type": "p", "text": "This policy applies to the Kýdos Belote mobile app (Android and iOS), its game servers and the kydosbelote.com website. Processing carried out by Google, Apple or app stores on their own behalf is governed by their respective policies." }
+              ]
+            },
+            {
+              "id": "donnees",
+              "title": "Data we process",
+              "blocks": [
+                { "type": "h", "text": "Account" },
+                { "type": "list", "items": [
+                  "Username, email address and password. The password is stored hashed: we never know it in plain text.",
+                  "If you choose **Sign in with Google**: Google account identifier, email address and, depending on what you allow, name and profile picture.",
+                  "First and last name if you provide them (optional), avatar and profile preferences."
+                ] },
+                { "type": "h", "text": "Game" },
+                { "type": "list", "items": [
+                  "Games played: replayable record (bids, cards, timing), results, statistics, Kýdos score and level.",
+                  "Robots: names, appearance, personality, brain configuration and game history.",
+                  "Wallet: token balance and transaction log (rewards, stakes, winnings, refunds, promo codes), VIP status.",
+                  "Social: team, role, invitations sent and received, team chat messages, leaderboards."
+                ] },
+                { "type": "h", "text": "Technical" },
+                { "type": "list", "items": [
+                  "IP address, connection and error logs, timestamps: for security, rate limiting and troubleshooting.",
+                  "Device information: operating system, app version, language."
+                ] },
+                { "type": "h", "text": "Advertising" },
+                { "type": "list", "items": [
+                  "The device’s advertising identifier and ad interaction data, processed by Google AdMob according to your consent choices."
+                ] },
+                { "type": "h", "text": "On your device only" },
+                { "type": "list", "items": [
+                  "Settings (music and effects volume, language, notifications) and offline practice data are stored locally and are not sent to us unless you play online."
+                ] }
+              ]
+            },
+            {
+              "id": "finalites",
+              "title": "Purposes and legal bases",
+              "blocks": [
+                { "type": "list", "items": [
+                  "**Creating and managing your account, running the game** (games, stable, competitions, wallet, teams): performance of the contract, i.e. the Terms.",
+                  "**Securing the Service and fighting cheating and fraud** (logs, rate limiting, abuse detection, token transaction traceability): our legitimate interest in offering a fair and safe game.",
+                  "**Improving the game and fixing bugs** based on aggregated statistics: our legitimate interest.",
+                  "**Showing ads**: consent for personalised advertising; otherwise, non-personalised ads may be shown based on our legitimate interest.",
+                  "**Answering your requests** and telling you about significant changes: performance of the contract and legitimate interest.",
+                  "**Complying with our legal obligations** (retention of certain data, responding to authorities): legal obligation."
+                ] },
+                { "type": "p", "text": "We make no decision with legal effects on you based solely on automated processing. The game’s robots decide their cards, not your rights." }
+              ]
+            },
+            {
+              "id": "publicite",
+              "title": "Advertising and consent",
+              "blocks": [
+                { "type": "p", "text": "On first launch, the app shows a consent screen that meets European requirements. You can accept, refuse or customise personalised advertising, and change your choice at any time in the settings. Refusing does not stop you from playing. VIP status removes ads, except rewarded videos you choose to watch." }
+              ]
+            },
+            {
+              "id": "destinataires",
+              "title": "Recipients and processors",
+              "blocks": [
+                { "type": "p", "text": "Your data is accessible only to authorised staff at {company}. Some information is visible to other players by nature: username, avatar, level, robots, results, leaderboards and team messages. We use providers acting on our instructions or as separate controllers:" },
+                { "type": "list", "items": [
+                  "**Google**: Sign in with Google (Google Sign-In) and advertising (Google AdMob);",
+                  "**Google Play and the Apple App Store**: app distribution and, where applicable, in-app purchases;",
+                  "**the host of our game servers** and databases;",
+                  "**GitHub**: hosting of the website."
+                ] },
+                { "type": "p", "text": "We never sell or rent your data. It may be disclosed to authorities where required by law." }
+              ]
+            },
+            {
+              "id": "transferts",
+              "title": "Transfers outside the European Union",
+              "blocks": [
+                { "type": "p", "text": "Some providers, including Google and GitHub, may process data in the United States. These transfers rely on the European Commission’s adequacy decision for the EU-US Data Privacy Framework for certified companies or, failing that, on the European Commission’s standard contractual clauses." }
+              ]
+            },
+            {
+              "id": "conservation",
+              "title": "Retention periods",
+              "blocks": [
+                { "type": "list", "items": [
+                  "**Account and game data**: as long as your account is active. An account inactive for 3 years is deleted after an email warning.",
+                  "**After account deletion**: erased or anonymised within 30 days, except data we are legally required to keep.",
+                  "**Technical and security logs**: 12 months at most.",
+                  "**Token transaction log**: for the lifetime of the account, to guarantee wallet integrity and handle complaints.",
+                  "**Team messages**: as long as the team exists or until they are deleted.",
+                  "**Support conversations**: 3 years from the last contact.",
+                  "**Aggregated, anonymised statistics**: indefinitely, as they no longer identify you."
+                ] }
+              ]
+            },
+            {
+              "id": "securite",
+              "title": "Security",
+              "blocks": [
+                { "type": "p", "text": "We protect your data with appropriate technical and organisational measures: encrypted communications, hashed passwords, time-limited token authentication, permission checks on every request, rate limiting, an audit log of administrative operations and access restricted to authorised staff. No system is infallible: we will notify you of any data breach likely to result in a high risk to your rights." }
+              ]
+            },
+            {
+              "id": "droits",
+              "title": "Your rights",
+              "blocks": [
+                { "type": "p", "text": "You have the following rights over your data:" },
+                { "type": "list", "items": [
+                  "**access** to and a copy of your data;",
+                  "**rectification** of inaccurate data;",
+                  "**erasure**, in particular by deleting your account;",
+                  "**portability** of the data you gave us, in a structured format;",
+                  "**objection** to processing based on our legitimate interest;",
+                  "**restriction** of processing;",
+                  "**withdrawal of consent** at any time, in particular for personalised advertising;",
+                  "**post-mortem instructions** on what happens to your data after your death."
+                ] },
+                { "type": "p", "text": "To exercise them, write to [{email}](mailto:{email}) from the address linked to your account, or state your username. We reply within one month, which may be extended by two months for complex requests. We may ask you to prove your identity if there is reasonable doubt." },
+                { "type": "p", "text": "If you believe your rights have not been respected, you may lodge a complaint with the **CNIL** (French data protection authority), 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, France, [www.cnil.fr](https://www.cnil.fr), or with the supervisory authority of your country of residence." }
+              ]
+            },
+            {
+              "id": "mineurs",
+              "title": "Minors",
+              "blocks": [
+                { "type": "p", "text": "The Service is not intended for children under 13. Between 13 and 15, processing a minor’s data requires the joint consent of the minor and a holder of parental authority. If you believe a child has given us data without permission, contact us: we will delete the account." }
+              ]
+            },
+            {
+              "id": "traceurs",
+              "title": "Cookies and trackers",
+              "blocks": [
+                { "type": "p", "text": "**Website**: kydosbelote.com uses **no cookies**, no audience measurement tool and no advertising tracker. It loads no external resources. Only your language preference is saved in your browser’s local storage (localStorage). It never leaves your device and you can clear it from your browser settings." },
+                { "type": "p", "text": "**App**: the app uses the device’s local storage for your settings and session, and the Google AdMob SDK for advertising, according to your consent choices." }
+              ]
+            },
+            {
+              "id": "hebergement",
+              "title": "Hosting",
+              "blocks": [
+                { "type": "host" },
+                { "type": "p", "text": "For security purposes, the website host may record visitors’ IP addresses in its technical logs, in accordance with its own privacy policy." }
+              ]
+            },
+            {
+              "id": "modifications",
+              "title": "Changes",
+              "blocks": [
+                { "type": "p", "text": "We may update this policy. The date of the last update appears at the top of the page. In case of a significant change, you will be informed in the app." }
+              ]
+            },
+            {
+              "id": "contact",
+              "title": "Contact",
+              "blocks": [
+                { "type": "p", "text": "For any question about your data: [{email}](mailto:{email})." }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
