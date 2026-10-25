@@ -17,7 +17,8 @@
     },
     "stores": [
       { "id": "google-play", "platform": "android", "url": "" },
-      { "id": "app-store", "platform": "ios", "url": "" }
+      { "id": "app-store", "platform": "ios", "url": "" },
+      { "id": "apk", "platform": "apk", "url": "apk/kydos.apk", "download": "kydos.apk" }
     ],
     "company": {
       "name": "Cephalo Sophie",
@@ -483,7 +484,8 @@
           "availability": "Bientôt disponible sur Android & iOS",
           "stores": {
             "google-play": { "top": "Bientôt sur", "name": "Google Play" },
-            "app-store": { "top": "Bientôt sur l’", "name": "App Store" }
+            "app-store": { "top": "Bientôt sur l’", "name": "App Store" },
+            "apk": { "top": "Télécharger l’", "name": "APK Android" }
           },
           "contactTitle": "Une question, un partenariat, un tournoi ?",
           "contactCta": "Écrire à l’équipe",
@@ -1261,7 +1263,8 @@
           "availability": "Coming soon to Android & iOS",
           "stores": {
             "google-play": { "top": "Coming soon on", "name": "Google Play" },
-            "app-store": { "top": "Coming soon on the", "name": "App Store" }
+            "app-store": { "top": "Coming soon on the", "name": "App Store" },
+            "apk": { "top": "Download the", "name": "Android APK" }
           },
           "contactTitle": "A question, a partnership, a tournament?",
           "contactCta": "Write to the team",

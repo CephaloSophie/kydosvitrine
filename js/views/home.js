@@ -481,7 +481,9 @@ function capot(t, S) {
       h('span', { class: 'store__txt' }, h('small', null, tx.top), h('b', null, tx.name))
     ];
     return h('li', null, st.url
-      ? h('a', { class: 'store', href: st.url, target: '_blank', rel: 'noopener noreferrer' }, inner)
+      ? st.download
+        ? h('a', { class: 'store store--apk', href: st.url, download: st.download, type: 'application/vnd.android.package-archive' }, inner)
+        : h('a', { class: 'store', href: st.url, target: '_blank', rel: 'noopener noreferrer' }, inner)
       : h('span', { class: 'store store--soon' }, inner, h('em', { class: 'store__soon' }, t.ui.comingSoon)));
   }));
   return h('section', { class: 'chapter chapter--capot capot', id: 'capot', 'data-chapter': 'capot', 'aria-labelledby': 'capot-title' },
